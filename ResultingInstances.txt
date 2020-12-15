@@ -1,0 +1,4776 @@
+
+Start of 1
+
+Instance ./Instances/testInstance_1.jl
+α = 0.5
+delta2 = 2
+Interdiction = [5, 48, 69]
+MP_obj = 103.4212646484375
+K_not length = 61 out of 332
+K_not weight total = 0.16546630859375
+Overall runtime = 16.694000005722046
+No. iterations = 22
+
+Start of 2
+
+Instance ./Instances/testInstance_2.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 27, 31]
+MP_obj = 82.46533203125
+K_not length = 1 out of 30
+K_not weight total = 0.03125
+Overall runtime = 8.763999938964844
+No. iterations = 12
+
+Start of 3
+
+Instance ./Instances/testInstance_3.jl
+α = 0.5
+delta2 = 2
+Interdiction = [4, 7, 33]
+MP_obj = 70.35124230384827
+K_not length = 3 out of 57
+K_not weight total = 0.5
+Overall runtime = 12.24399995803833
+No. iterations = 18
+
+Start of 4
+
+Instance ./Instances/testInstance_4.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 4, 52]
+MP_obj = 156.5
+K_not length = 3 out of 5
+K_not weight total = 0.4375
+Overall runtime = 4.039000034332275
+No. iterations = 5
+
+Start of 5
+
+Instance ./Instances/testInstance_5.jl
+α = 0.5
+delta2 = 2
+Interdiction = [51, 58, 65]
+MP_obj = 91.76171875
+K_not length = 7 out of 15
+K_not weight total = 0.4375
+Overall runtime = 6.04200005531311
+No. iterations = 8
+
+Start of 6
+
+Instance ./Instances/testInstance_6.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 12, 13]
+MP_obj = 172.5
+K_not length = 0 out of 2
+K_not weight total = 0
+Overall runtime = 2.8570001125335693
+No. iterations = 3
+
+Start of 7
+
+Instance ./Instances/testInstance_7.jl
+α = 0.5
+delta2 = 2
+Interdiction = [4, 15, 40]
+MP_obj = 141.21875
+K_not length = 1 out of 6
+K_not weight total = 0.5
+Overall runtime = 5.421999931335449
+No. iterations = 7
+
+Start of 8
+
+Instance ./Instances/testInstance_8.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 27, 58]
+MP_obj = 85.96316875424236
+K_not length = 0 out of 763
+K_not weight total = 0
+Overall runtime = 21.21299982070923
+No. iterations = 27
+
+Start of 9
+
+Instance ./Instances/testInstance_9.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 12, 52]
+MP_obj = 90.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.5780000686645508
+No. iterations = 1
+
+Start of 10
+
+Instance ./Instances/testInstance_10.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3]
+MP_obj = 34.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.8880000114440918
+No. iterations = 1
+
+Start of 11
+
+Instance ./Instances/testInstance_11.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 31, 59]
+MP_obj = 127.99591827392578
+K_not length = 0 out of 12
+K_not weight total = 0
+Overall runtime = 9.73800015449524
+No. iterations = 14
+
+Start of 12
+
+Instance ./Instances/testInstance_12.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 34, 59]
+MP_obj = 61.9681396484375
+K_not length = 0 out of 410
+K_not weight total = 0
+Overall runtime = 14.60700011253357
+No. iterations = 19
+
+Start of 13
+
+Instance ./Instances/testInstance_13.jl
+α = 0.5
+delta2 = 2
+Interdiction = [5]
+MP_obj = 59.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.5829999446868896
+No. iterations = 1
+
+Start of 14
+
+Instance ./Instances/testInstance_14.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3, 4, 21]
+MP_obj = 68.83628712501377
+K_not length = 296 out of 64410
+K_not weight total = 0.3898334503173828
+Overall runtime = 594.0369999408722
+No. iterations = 31
+
+Start of 15
+
+Instance ./Instances/testInstance_15.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 6, 50]
+MP_obj = 128.67200918123126
+K_not length = 62 out of 1767
+K_not weight total = 0.1246185302734375
+Overall runtime = 23.759000062942505
+No. iterations = 22
+
+Start of 16
+
+Instance ./Instances/testInstance_16.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 44, 51]
+MP_obj = 123.987060546875
+K_not length = 6 out of 13
+K_not weight total = 0.486328125
+Overall runtime = 8.104000091552734
+No. iterations = 11
+
+Start of 17
+
+Instance ./Instances/testInstance_17.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 40, 59]
+MP_obj = 87.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.625
+No. iterations = 1
+
+Start of 18
+
+Instance ./Instances/testInstance_18.jl
+α = 0.5
+delta2 = 2
+Interdiction = [50, 52, 61]
+MP_obj = 126.0
+K_not length = 8 out of 14
+K_not weight total = 0.44140625
+Overall runtime = 7.197999954223633
+No. iterations = 10
+
+Start of 19
+
+Instance ./Instances/testInstance_19.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 30, 61]
+MP_obj = 136.46421432495117
+K_not length = 0 out of 20
+K_not weight total = 0
+Overall runtime = 9.094000101089478
+No. iterations = 13
+
+Start of 20
+
+Instance ./Instances/testInstance_20.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 4, 18]
+MP_obj = 70.0
+K_not length = 3 out of 10
+K_not weight total = 0.4375
+Overall runtime = 5.940999984741211
+No. iterations = 8
+
+Start of 21
+
+Instance ./Instances/testInstance_21.jl
+α = 0.5
+delta2 = 2
+Interdiction = [13, 18, 55]
+MP_obj = 65.47412842698395
+K_not length = 751 out of 53193
+K_not weight total = 0.0464174747467041
+Overall runtime = 559.7539999485016
+No. iterations = 31
+
+Start of 22
+
+Instance ./Instances/testInstance_22.jl
+α = 0.5
+delta2 = 2
+Interdiction = [7, 10, 28]
+MP_obj = 85.5
+K_not length = 2 out of 5
+K_not weight total = 0.375
+Overall runtime = 5.133000135421753
+No. iterations = 6
+
+Start of 23
+
+Instance ./Instances/testInstance_23.jl
+α = 0.5
+delta2 = 2
+Interdiction = [5, 45, 56]
+MP_obj = 102.25
+K_not length = 3 out of 11
+K_not weight total = 0.25
+Overall runtime = 6.078000068664551
+No. iterations = 8
+
+Start of 24
+
+Instance ./Instances/testInstance_24.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 40]
+MP_obj = 132.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.5920000076293945
+No. iterations = 1
+
+Start of 25
+
+Instance ./Instances/testInstance_25.jl
+α = 0.5
+delta2 = 2
+Interdiction = [33, 34, 52]
+MP_obj = 100.87600001355167
+K_not length = 86 out of 5538
+K_not weight total = 0.00086955726146698
+Overall runtime = 56.37999987602234
+No. iterations = 28
+
+Start of 26
+
+Instance ./Instances/testInstance_26.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 2, 24]
+MP_obj = 125.82958984375
+K_not length = 1 out of 12
+K_not weight total = 0.015625
+Overall runtime = 7.473999977111816
+No. iterations = 10
+
+Start of 27
+
+Instance ./Instances/testInstance_27.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 26, 51]
+MP_obj = 94.98236083984375
+K_not length = 11 out of 42
+K_not weight total = 0.48828125
+Overall runtime = 9.894000053405762
+No. iterations = 14
+
+Start of 28
+
+Instance ./Instances/testInstance_28.jl
+α = 0.5
+delta2 = 2
+Interdiction = [4, 36, 45]
+MP_obj = 96.3125
+K_not length = 1 out of 3
+K_not weight total = 0.25
+Overall runtime = 3.4230000972747803
+No. iterations = 4
+
+Start of 29
+
+Instance ./Instances/testInstance_29.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3, 57, 63]
+MP_obj = 79.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.6319999694824219
+No. iterations = 1
+
+Start of 30
+
+Instance ./Instances/testInstance_30.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 19, 60]
+MP_obj = 73.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.6180000305175781
+No. iterations = 1
+
+Start of 31
+
+Instance ./Instances/testInstance_31.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 10, 41]
+MP_obj = 53.0
+K_not length = 2 out of 3
+K_not weight total = 0.5
+Overall runtime = 3.4700000286102295
+No. iterations = 4
+
+Start of 32
+
+Instance ./Instances/testInstance_32.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 3, 50]
+MP_obj = 67.29934692382812
+K_not length = 4 out of 652
+K_not weight total = 0.0625
+Overall runtime = 15.837999820709229
+No. iterations = 19
+
+Start of 33
+
+Instance ./Instances/testInstance_33.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 43, 47]
+MP_obj = 107.85199772939086
+K_not length = 8162 out of 63858
+K_not weight total = 0.1182870864868164
+Overall runtime = 577.4509999752045
+No. iterations = 28
+
+Start of 34
+
+Instance ./Instances/testInstance_34.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 10, 57]
+MP_obj = 149.5
+K_not length = 1 out of 3
+K_not weight total = 0.25
+Overall runtime = 5.045000076293945
+No. iterations = 6
+
+Start of 35
+
+Instance ./Instances/testInstance_35.jl
+α = 0.5
+delta2 = 2
+Interdiction = [6, 23, 55]
+MP_obj = 133.64102840423584
+K_not length = 6203 out of 152450
+K_not weight total = 0.1196136474609375
+Overall runtime = 971.066999912262
+No. iterations = 19
+
+Start of 36
+
+Instance ./Instances/testInstance_36.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 16, 35]
+MP_obj = 80.25000000003749
+K_not length = 0 out of 536
+K_not weight total = 0
+Overall runtime = 16.306999921798706
+No. iterations = 19
+
+Start of 37
+
+Instance ./Instances/testInstance_37.jl
+α = 0.5
+delta2 = 2
+Interdiction = [4, 31, 67]
+MP_obj = 271.60833550058305
+K_not length = 244 out of 3327
+K_not weight total = 0.4155513048171997
+Overall runtime = 34.557000160217285
+No. iterations = 25
+
+Start of 38
+
+Instance ./Instances/testInstance_38.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 30]
+MP_obj = 159.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.6010000705718994
+No. iterations = 1
+
+Start of 39
+
+Instance ./Instances/testInstance_39.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 7, 54]
+MP_obj = 87.05629612505436
+K_not length = 85 out of 504
+K_not weight total = 0.393310546875
+Overall runtime = 16.659000158309937
+No. iterations = 22
+
+Start of 40
+
+Instance ./Instances/testInstance_40.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 16]
+MP_obj = 138.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.5709998607635498
+No. iterations = 1
+
+Start of 41
+
+Instance ./Instances/testInstance_41.jl
+α = 0.5
+delta2 = 2
+Interdiction = [46, 50, 51]
+MP_obj = 72.39544207940344
+K_not length = 17 out of 44126
+K_not weight total = 0.1065673828125
+Overall runtime = 760.1419999599457
+No. iterations = 32
+
+Start of 42
+
+Instance ./Instances/testInstance_42.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 30]
+MP_obj = 44.75
+K_not length = 2 out of 3
+K_not weight total = 0.5
+Overall runtime = 3.13700008392334
+No. iterations = 3
+
+Start of 43
+
+Instance ./Instances/testInstance_43.jl
+α = 0.5
+delta2 = 2
+Interdiction = [31, 42, 57]
+MP_obj = 180.765625
+K_not length = 24 out of 46
+K_not weight total = 0.4765625
+Overall runtime = 9.743000030517578
+No. iterations = 14
+
+Start of 44
+
+Instance ./Instances/testInstance_44.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 34, 74]
+MP_obj = 49.098236083984375
+K_not length = 0 out of 43
+K_not weight total = 0
+Overall runtime = 11.657000064849854
+No. iterations = 17
+
+Start of 45
+
+Instance ./Instances/testInstance_45.jl
+α = 0.5
+delta2 = 2
+Interdiction = [4, 20, 49]
+MP_obj = 68.11032629013062
+K_not length = 39 out of 444
+K_not weight total = 0.127685546875
+Overall runtime = 13.410000085830688
+No. iterations = 17
+
+Start of 46
+
+Instance ./Instances/testInstance_46.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 12, 42]
+MP_obj = 115.3369140625
+K_not length = 1 out of 7
+K_not weight total = 0.5
+Overall runtime = 6.080000162124634
+No. iterations = 8
+
+Start of 47
+
+Instance ./Instances/testInstance_47.jl
+α = 0.5
+delta2 = 2
+Interdiction = [7]
+MP_obj = 27.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.5529999732971191
+No. iterations = 1
+
+Start of 48
+
+Instance ./Instances/testInstance_48.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 35, 37]
+MP_obj = 73.626220703125
+K_not length = 1 out of 13
+K_not weight total = 0.0625
+Overall runtime = 7.1579999923706055
+No. iterations = 10
+
+Start of 49
+
+Instance ./Instances/testInstance_49.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 50, 58]
+MP_obj = 54.676422119140625
+K_not length = 2 out of 47
+K_not weight total = 0.251953125
+Overall runtime = 13.080999851226807
+No. iterations = 20
+
+Start of 50
+
+Instance ./Instances/testInstance_50.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3, 10, 49]
+MP_obj = 61.9998664855957
+K_not length = 1 out of 72
+K_not weight total = 0.125
+Overall runtime = 12.420000076293945
+No. iterations = 18
+
+Start of 51
+
+Instance ./Instances/testInstance_51.jl
+α = 0.5
+delta2 = 2
+Interdiction = [4, 27]
+MP_obj = 48.390625
+K_not length = 0 out of 11
+K_not weight total = 0
+Overall runtime = 7.796000003814697
+No. iterations = 11
+
+Start of 52
+
+Instance ./Instances/testInstance_52.jl
+α = 0.5
+delta2 = 2
+Interdiction = [6, 50, 54]
+MP_obj = 97.89167785644531
+K_not length = 0 out of 32
+K_not weight total = 0
+Overall runtime = 9.02999997138977
+No. iterations = 13
+
+Start of 53
+
+Instance ./Instances/testInstance_53.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 26, 28]
+MP_obj = 116.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 2.180999994277954
+No. iterations = 2
+
+Start of 54
+
+Instance ./Instances/testInstance_54.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 47, 61]
+MP_obj = 99.67303466796875
+K_not length = 0 out of 55
+K_not weight total = 0
+Overall runtime = 9.337999820709229
+No. iterations = 13
+
+Start of 55
+
+Instance ./Instances/testInstance_55.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3, 25, 31]
+MP_obj = 125.2200231552124
+K_not length = 39 out of 156
+K_not weight total = 0.4102630615234375
+Overall runtime = 13.501999855041504
+No. iterations = 20
+
+Start of 56
+
+Instance ./Instances/testInstance_56.jl
+α = 0.5
+delta2 = 2
+Interdiction = [4]
+MP_obj = 87.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.6459999084472656
+No. iterations = 1
+
+Start of 57
+
+Instance ./Instances/testInstance_57.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 29, 70]
+MP_obj = 156.23779296875
+K_not length = 13 out of 48
+K_not weight total = 0.191162109375
+Overall runtime = 9.990999937057495
+No. iterations = 14
+
+Start of 58
+
+Instance ./Instances/testInstance_58.jl
+α = 0.5
+delta2 = 2
+Interdiction = [4, 61]
+MP_obj = 52.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.5869998931884766
+No. iterations = 1
+
+Start of 59
+
+Instance ./Instances/testInstance_59.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 48, 56]
+MP_obj = 84.4697265625
+K_not length = 0 out of 7
+K_not weight total = 0
+Overall runtime = 5.588000059127808
+No. iterations = 7
+
+Start of 60
+
+Instance ./Instances/testInstance_60.jl
+α = 0.5
+delta2 = 2
+Interdiction = [4, 35, 41]
+MP_obj = 104.55485463142395
+K_not length = 2 out of 256
+K_not weight total = 0.1875
+Overall runtime = 15.914999961853027
+No. iterations = 22
+
+Start of 61
+
+Instance ./Instances/testInstance_61.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 2, 10]
+MP_obj = 93.518310546875
+K_not length = 6 out of 22
+K_not weight total = 0.24609375
+Overall runtime = 7.8450000286102295
+No. iterations = 11
+
+Start of 62
+
+Instance ./Instances/testInstance_62.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3, 30, 54]
+MP_obj = 106.36433792114258
+K_not length = 11 out of 47
+K_not weight total = 0.2822265625
+Overall runtime = 10.177000045776367
+No. iterations = 14
+
+Start of 63
+
+Instance ./Instances/testInstance_63.jl
+α = 0.5
+delta2 = 2
+Interdiction = [13, 34, 45]
+MP_obj = 128.069318984868
+K_not length = 0 out of 3367
+K_not weight total = 0
+Overall runtime = 36.42199993133545
+No. iterations = 28
+
+Start of 64
+
+Instance ./Instances/testInstance_64.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3, 5, 47]
+MP_obj = 61.109375
+K_not length = 0 out of 38
+K_not weight total = 0
+Overall runtime = 11.78600001335144
+No. iterations = 17
+
+Start of 65
+
+Instance ./Instances/testInstance_65.jl
+α = 0.5
+delta2 = 2
+Interdiction = [4, 71]
+MP_obj = 52.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.6150000095367432
+No. iterations = 1
+
+Start of 66
+
+Instance ./Instances/testInstance_66.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3, 15, 24]
+MP_obj = 65.30314191803336
+K_not length = 1 out of 607
+K_not weight total = 0.0009765625
+Overall runtime = 23.53600001335144
+No. iterations = 30
+
+Start of 67
+
+Instance ./Instances/testInstance_67.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 3, 32]
+MP_obj = 54.772252798080444
+K_not length = 25 out of 407
+K_not weight total = 0.01031494140625
+Overall runtime = 13.726999998092651
+No. iterations = 18
+
+Start of 68
+
+Instance ./Instances/testInstance_68.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3, 27, 31]
+MP_obj = 89.953125
+K_not length = 1 out of 4
+K_not weight total = 0.5
+Overall runtime = 4.168999910354614
+No. iterations = 5
+
+Start of 69
+
+Instance ./Instances/testInstance_69.jl
+α = 0.5
+delta2 = 2
+Interdiction = [6, 28, 48]
+MP_obj = 83.8201904296875
+K_not length = 1 out of 11
+K_not weight total = 0.5
+Overall runtime = 7.468999862670898
+No. iterations = 10
+
+Start of 70
+
+Instance ./Instances/testInstance_70.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3, 37]
+MP_obj = 66.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.555999994277954
+No. iterations = 1
+
+Start of 71
+
+Instance ./Instances/testInstance_71.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 25, 46]
+MP_obj = 105.87566471099854
+K_not length = 8114 out of 137984
+K_not weight total = 0.1394500732421875
+Overall runtime = 658.106999874115
+No. iterations = 19
+
+Start of 72
+
+Instance ./Instances/testInstance_72.jl
+α = 0.5
+delta2 = 2
+Interdiction = [38, 47, 61]
+MP_obj = 73.25
+K_not length = 1 out of 3
+K_not weight total = 0.5
+Overall runtime = 5.326000213623047
+No. iterations = 6
+
+Start of 73
+
+Instance ./Instances/testInstance_73.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 22, 46]
+MP_obj = 113.99125483632088
+K_not length = 14 out of 410
+K_not weight total = 0.2840576171875
+Overall runtime = 15.769000053405762
+No. iterations = 21
+
+Start of 74
+
+Instance ./Instances/testInstance_74.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3, 6, 18]
+MP_obj = 162.58873558044434
+K_not length = 5 out of 113
+K_not weight total = 0.2509765625
+Overall runtime = 12.125
+No. iterations = 17
+
+Start of 75
+
+Instance ./Instances/testInstance_75.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 9, 65]
+MP_obj = 55.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.5349998474121094
+No. iterations = 1
+
+Start of 76
+
+Instance ./Instances/testInstance_76.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 11, 32]
+MP_obj = 318.97301353514194
+K_not length = 2655 out of 98560
+K_not weight total = 0.02662181854248047
+Overall runtime = 555.680999994278
+No. iterations = 21
+
+Start of 77
+
+Instance ./Instances/testInstance_77.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 21]
+MP_obj = 56.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.8349997997283936
+No. iterations = 1
+
+Start of 78
+
+Instance ./Instances/testInstance_78.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 15, 44]
+MP_obj = 119.5625
+K_not length = 3 out of 14
+K_not weight total = 0.375
+Overall runtime = 5.868000030517578
+No. iterations = 7
+
+Start of 79
+
+Instance ./Instances/testInstance_79.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 38, 43]
+MP_obj = 199.8809406454675
+K_not length = 5472 out of 62504
+K_not weight total = 0.01945704221725464
+Overall runtime = 605.2020001411438
+No. iterations = 29
+
+Start of 80
+
+Instance ./Instances/testInstance_80.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 4, 72]
+MP_obj = 137.25
+K_not length = 1 out of 6
+K_not weight total = 0.5
+Overall runtime = 5.28600001335144
+No. iterations = 6
+
+Start of 81
+
+Instance ./Instances/testInstance_81.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 12, 48]
+MP_obj = 100.7883132994175
+K_not length = 795 out of 4288
+K_not weight total = 0.23154723644256592
+Overall runtime = 42.01599979400635
+No. iterations = 28
+
+Start of 82
+
+Instance ./Instances/testInstance_82.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 21, 30]
+MP_obj = 143.0
+K_not length = 0 out of 4784
+K_not weight total = 0
+Overall runtime = 34.98899984359741
+No. iterations = 20
+
+Start of 83
+
+Instance ./Instances/testInstance_83.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 5, 8]
+MP_obj = 184.66877275705338
+K_not length = 3 out of 494
+K_not weight total = 0.5
+Overall runtime = 17.395000219345093
+No. iterations = 22
+
+Start of 84
+
+Instance ./Instances/testInstance_84.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 64, 65]
+MP_obj = 70.59765625
+K_not length = 2 out of 5
+K_not weight total = 0.375
+Overall runtime = 4.710999965667725
+No. iterations = 6
+
+Start of 85
+
+Instance ./Instances/testInstance_85.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3, 33, 36]
+MP_obj = 75.5
+K_not length = 1 out of 3
+K_not weight total = 0.5
+Overall runtime = 3.490000009536743
+No. iterations = 4
+
+Start of 86
+
+Instance ./Instances/testInstance_86.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 37, 55]
+MP_obj = 115.90679931640625
+K_not length = 1885 out of 4724
+K_not weight total = 0.08022308349609375
+Overall runtime = 40.06499981880188
+No. iterations = 28
+
+Start of 87
+
+Instance ./Instances/testInstance_87.jl
+α = 0.5
+delta2 = 2
+Interdiction = [7]
+MP_obj = 117.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.6549999713897705
+No. iterations = 1
+
+Start of 88
+
+Instance ./Instances/testInstance_88.jl
+α = 0.5
+delta2 = 2
+Interdiction = [44, 55, 68]
+MP_obj = 139.87331923504826
+K_not length = 0 out of 25668
+K_not weight total = 0
+Overall runtime = 408.70499992370605
+No. iterations = 32
+
+Start of 89
+
+Instance ./Instances/testInstance_89.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 19, 42]
+MP_obj = 57.75
+K_not length = 6 out of 10
+K_not weight total = 0.328125
+Overall runtime = 7.559000015258789
+No. iterations = 10
+
+Start of 90
+
+Instance ./Instances/testInstance_90.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 54, 66]
+MP_obj = 130.4688799204814
+K_not length = 63 out of 1912
+K_not weight total = 0.352691650390625
+Overall runtime = 32.2720000743866
+No. iterations = 32
+
+Start of 91
+
+Instance ./Instances/testInstance_91.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 2, 22]
+MP_obj = 115.5
+K_not length = 7 out of 12
+K_not weight total = 0.4931640625
+Overall runtime = 7.857999801635742
+No. iterations = 11
+
+Start of 92
+
+Instance ./Instances/testInstance_92.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 14, 21]
+MP_obj = 67.253662109375
+K_not length = 3 out of 14
+K_not weight total = 0.328125
+Overall runtime = 6.84499979019165
+No. iterations = 9
+
+Start of 93
+
+Instance ./Instances/testInstance_93.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 18, 52]
+MP_obj = 128.625
+K_not length = 0 out of 26
+K_not weight total = 0
+Overall runtime = 9.348000049591064
+No. iterations = 13
+
+Start of 94
+
+Instance ./Instances/testInstance_94.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3, 42, 47]
+MP_obj = 57.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.6689999103546143
+No. iterations = 1
+
+Start of 95
+
+Instance ./Instances/testInstance_95.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 13, 49]
+MP_obj = 71.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.6140000820159912
+No. iterations = 1
+
+Start of 96
+
+Instance ./Instances/testInstance_96.jl
+α = 0.5
+delta2 = 2
+Interdiction = [30, 31, 45]
+MP_obj = 78.484375
+K_not length = 1 out of 4
+K_not weight total = 0.5
+Overall runtime = 4.753999948501587
+No. iterations = 6
+
+Start of 97
+
+Instance ./Instances/testInstance_97.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 50, 56]
+MP_obj = 244.27808673801837
+K_not length = 9 out of 34692
+K_not weight total = 0.390625
+Overall runtime = 516.6949999332428
+No. iterations = 43
+
+Start of 98
+
+Instance ./Instances/testInstance_98.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 22, 25]
+MP_obj = 43.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 2.3299999237060547
+No. iterations = 2
+
+Start of 99
+
+Instance ./Instances/testInstance_99.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 16]
+MP_obj = 47.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.746999979019165
+No. iterations = 1
+
+Start of 100
+
+Instance ./Instances/testInstance_100.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3, 39, 46]
+MP_obj = 80.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 2.254999876022339
+No. iterations = 2
+
+Start of 101
+
+Instance ./Instances/testInstance_101.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 12, 32]
+MP_obj = 125.3933358117938
+K_not length = 0 out of 1034
+K_not weight total = 0
+Overall runtime = 21.1010000705719
+No. iterations = 23
+
+Start of 102
+
+Instance ./Instances/testInstance_102.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3, 14, 16]
+MP_obj = 67.296875
+K_not length = 1 out of 4
+K_not weight total = 0.25
+Overall runtime = 4.073000192642212
+No. iterations = 5
+
+Start of 103
+
+Instance ./Instances/testInstance_103.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 5, 12]
+MP_obj = 99.51226923707873
+K_not length = 30 out of 18551
+K_not weight total = 0.3751220703125
+Overall runtime = 145.5369999408722
+No. iterations = 24
+
+Start of 104
+
+Instance ./Instances/testInstance_104.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 9, 19]
+MP_obj = 115.41402053833008
+K_not length = 48 out of 530
+K_not weight total = 0.1837158203125
+Overall runtime = 16.80299997329712
+No. iterations = 21
+
+Start of 105
+
+Instance ./Instances/testInstance_105.jl
+α = 0.5
+delta2 = 2
+Interdiction = [5, 53, 66]
+MP_obj = 81.97700820118189
+K_not length = 372 out of 5061
+K_not weight total = 0.12562012672424316
+Overall runtime = 44.91799998283386
+No. iterations = 23
+
+Start of 106
+
+Instance ./Instances/testInstance_106.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 8, 20]
+MP_obj = 67.123046875
+K_not length = 9 out of 75
+K_not weight total = 0.28125
+Overall runtime = 10.116000175476074
+No. iterations = 14
+
+Start of 107
+
+Instance ./Instances/testInstance_107.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 10]
+MP_obj = 32.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.5889999866485596
+No. iterations = 1
+
+Start of 108
+
+Instance ./Instances/testInstance_108.jl
+α = 0.5
+delta2 = 2
+Interdiction = [7, 42, 44]
+MP_obj = 151.25
+K_not length = 0 out of 2
+K_not weight total = 0
+Overall runtime = 3.813000202178955
+No. iterations = 4
+
+Start of 109
+
+Instance ./Instances/testInstance_109.jl
+α = 0.5
+delta2 = 2
+Interdiction = [10, 16, 27]
+MP_obj = 92.15290196985006
+K_not length = 0 out of 54633
+K_not weight total = 0
+Overall runtime = 534.7569999694824
+No. iterations = 25
+
+Start of 110
+
+Instance ./Instances/testInstance_110.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 10, 35]
+MP_obj = 188.96875
+K_not length = 0 out of 279
+K_not weight total = 0
+Overall runtime = 10.901999950408936
+No. iterations = 13
+
+Start of 111
+
+Instance ./Instances/testInstance_111.jl
+α = 0.5
+delta2 = 2
+Interdiction = [5, 73]
+MP_obj = 78.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.6200001239776611
+No. iterations = 1
+
+Start of 112
+
+Instance ./Instances/testInstance_112.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 4, 61]
+MP_obj = 41.75
+K_not length = 2 out of 4
+K_not weight total = 0.5
+Overall runtime = 4.197000026702881
+No. iterations = 5
+
+Start of 113
+
+Instance ./Instances/testInstance_113.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3, 12, 34]
+MP_obj = 53.15575408935547
+K_not length = 7 out of 389
+K_not weight total = 0.0859375
+Overall runtime = 13.200999975204468
+No. iterations = 16
+
+Start of 114
+
+Instance ./Instances/testInstance_114.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 2, 25]
+MP_obj = 48.5
+K_not length = 0 out of 2
+K_not weight total = 0
+Overall runtime = 2.2210001945495605
+No. iterations = 2
+
+Start of 115
+
+Instance ./Instances/testInstance_115.jl
+α = 0.5
+delta2 = 2
+Interdiction = [4, 11, 63]
+MP_obj = 127.5
+K_not length = 1 out of 4
+K_not weight total = 0.25
+Overall runtime = 3.6050000190734863
+No. iterations = 4
+
+Start of 116
+
+Instance ./Instances/testInstance_116.jl
+α = 0.5
+delta2 = 2
+Interdiction = [4, 22, 30]
+MP_obj = 87.8876953125
+K_not length = 1 out of 13
+K_not weight total = 0.25
+Overall runtime = 6.858000040054321
+No. iterations = 9
+
+Start of 117
+
+Instance ./Instances/testInstance_117.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 3, 13]
+MP_obj = 149.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 2.739000082015991
+No. iterations = 3
+
+Start of 118
+
+Instance ./Instances/testInstance_118.jl
+α = 0.5
+delta2 = 2
+Interdiction = [36, 41, 44]
+MP_obj = 222.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.6749999523162842
+No. iterations = 1
+
+Start of 119
+
+Instance ./Instances/testInstance_119.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3, 39]
+MP_obj = 82.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.6380000114440918
+No. iterations = 1
+
+Start of 120
+
+Instance ./Instances/testInstance_120.jl
+α = 0.5
+delta2 = 2
+Interdiction = [28, 37, 49]
+MP_obj = 106.2421875
+K_not length = 1 out of 5
+K_not weight total = 0.5
+Overall runtime = 6.5350000858306885
+No. iterations = 9
+
+Start of 121
+
+Instance ./Instances/testInstance_121.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 13, 27]
+MP_obj = 84.243408203125
+K_not length = 19 out of 122
+K_not weight total = 0.4921875
+Overall runtime = 11.26800012588501
+No. iterations = 15
+
+Start of 122
+
+Instance ./Instances/testInstance_122.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 14, 34]
+MP_obj = 78.0
+K_not length = 0 out of 4
+K_not weight total = 0
+Overall runtime = 3.553999900817871
+No. iterations = 4
+
+Start of 123
+
+Instance ./Instances/testInstance_123.jl
+α = 0.5
+delta2 = 2
+Interdiction = [4]
+MP_obj = 93.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.630000114440918
+No. iterations = 1
+
+Start of 124
+
+Instance ./Instances/testInstance_124.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 41, 62]
+MP_obj = 155.25390625
+K_not length = 6 out of 12
+K_not weight total = 0.44140625
+Overall runtime = 8.168999910354614
+No. iterations = 11
+
+Start of 125
+
+Instance ./Instances/testInstance_125.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 4, 41]
+MP_obj = 126.89764499664307
+K_not length = 0 out of 7302
+K_not weight total = 0
+Overall runtime = 58.325000047683716
+No. iterations = 24
+
+Start of 126
+
+Instance ./Instances/testInstance_126.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 26, 50]
+MP_obj = 67.11041505041067
+K_not length = 0 out of 27633
+K_not weight total = 0
+Overall runtime = 529.3450000286102
+No. iterations = 40
+
+Start of 127
+
+Instance ./Instances/testInstance_127.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 2, 54]
+MP_obj = 133.65860446498118
+K_not length = 96 out of 7891
+K_not weight total = 0.4309844970703125
+Overall runtime = 88.89100003242493
+No. iterations = 32
+
+Start of 128
+
+Instance ./Instances/testInstance_128.jl
+α = 0.5
+delta2 = 2
+Interdiction = [8, 16, 49]
+MP_obj = 93.29241748381173
+K_not length = 718 out of 14286
+K_not weight total = 0.3242689333856106
+Overall runtime = 183.94900012016296
+No. iterations = 33
+
+Start of 129
+
+Instance ./Instances/testInstance_129.jl
+α = 0.5
+delta2 = 2
+Interdiction = [5, 12, 21]
+MP_obj = 114.13966369628906
+K_not length = 0 out of 24
+K_not weight total = 0
+Overall runtime = 9.855000019073486
+No. iterations = 13
+
+Start of 130
+
+Instance ./Instances/testInstance_130.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 20, 71]
+MP_obj = 92.16765795648098
+K_not length = 7 out of 2047
+K_not weight total = 0.130126953125
+Overall runtime = 29.994999885559082
+No. iterations = 26
+
+Start of 131
+
+Instance ./Instances/testInstance_131.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 6, 57]
+MP_obj = 30.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.5829999446868896
+No. iterations = 1
+
+Start of 132
+
+Instance ./Instances/testInstance_132.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 7, 63]
+MP_obj = 110.0
+K_not length = 3 out of 6
+K_not weight total = 0.4375
+Overall runtime = 4.593999862670898
+No. iterations = 6
+
+Start of 133
+
+Instance ./Instances/testInstance_133.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 5, 22]
+MP_obj = 77.0
+K_not length = 2 out of 4
+K_not weight total = 0.5
+Overall runtime = 2.7860000133514404
+No. iterations = 3
+
+Start of 134
+
+Instance ./Instances/testInstance_134.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 6, 25]
+MP_obj = 100.5
+K_not length = 1 out of 4
+K_not weight total = 0.25
+Overall runtime = 3.4189999103546143
+No. iterations = 4
+
+Start of 135
+
+Instance ./Instances/testInstance_135.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3, 51, 67]
+MP_obj = 156.0
+K_not length = 1 out of 3
+K_not weight total = 0.5
+Overall runtime = 2.9050002098083496
+No. iterations = 3
+
+Start of 136
+
+Instance ./Instances/testInstance_136.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 48, 57]
+MP_obj = 80.6163330078125
+K_not length = 1752 out of 74178
+K_not weight total = 0.00335693359375
+Overall runtime = 528.6349999904633
+No. iterations = 25
+
+Start of 137
+
+Instance ./Instances/testInstance_137.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 6, 42]
+MP_obj = 80.03802490234375
+K_not length = 0 out of 21
+K_not weight total = 0
+Overall runtime = 7.968999862670898
+No. iterations = 10
+
+Start of 138
+
+Instance ./Instances/testInstance_138.jl
+α = 0.5
+delta2 = 2
+Interdiction = [13, 17, 33]
+MP_obj = 87.36854568868876
+K_not length = 6 out of 1347
+K_not weight total = 0.25390625
+Overall runtime = 21.367000102996826
+No. iterations = 22
+
+Start of 139
+
+Instance ./Instances/testInstance_139.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 6, 36]
+MP_obj = 148.61134719848633
+K_not length = 0 out of 308
+K_not weight total = 0
+Overall runtime = 18.504000186920166
+No. iterations = 26
+
+Start of 140
+
+Instance ./Instances/testInstance_140.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 21, 54]
+MP_obj = 138.61860704421997
+K_not length = 2234 out of 72082
+K_not weight total = 0.3299407958984375
+Overall runtime = 778.795000076294
+No. iterations = 26
+
+Start of 141
+
+Instance ./Instances/testInstance_141.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 15, 47]
+MP_obj = 64.68359375
+K_not length = 4 out of 20
+K_not weight total = 0.25
+Overall runtime = 7.7200000286102295
+No. iterations = 10
+
+Start of 142
+
+Instance ./Instances/testInstance_142.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 12, 21]
+MP_obj = 94.81529587134719
+K_not length = 0 out of 448
+K_not weight total = 0
+Overall runtime = 17.73800015449524
+No. iterations = 24
+
+Start of 143
+
+Instance ./Instances/testInstance_143.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 4, 60]
+MP_obj = 90.92452298117132
+K_not length = 0 out of 35400
+K_not weight total = 0
+Overall runtime = 669.7139999866486
+No. iterations = 34
+
+Start of 144
+
+Instance ./Instances/testInstance_144.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 51, 53]
+MP_obj = 58.11328125
+K_not length = 2 out of 6
+K_not weight total = 0.375
+Overall runtime = 5.24399995803833
+No. iterations = 6
+
+Start of 145
+
+Instance ./Instances/testInstance_145.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3, 4, 53]
+MP_obj = 81.1640625
+K_not length = 0 out of 5
+K_not weight total = 0
+Overall runtime = 4.609999895095825
+No. iterations = 6
+
+Start of 146
+
+Instance ./Instances/testInstance_146.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 5, 38]
+MP_obj = 94.84401571936905
+K_not length = 934 out of 6180
+K_not weight total = 0.23769617080688477
+Overall runtime = 65.8769998550415
+No. iterations = 31
+
+Start of 147
+
+Instance ./Instances/testInstance_147.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 3, 15]
+MP_obj = 100.68490750866476
+K_not length = 659 out of 87401
+K_not weight total = 0.4722083806991577
+Overall runtime = 719.0969998836517
+No. iterations = 29
+
+Start of 148
+
+Instance ./Instances/testInstance_148.jl
+α = 0.5
+delta2 = 2
+Interdiction = [18, 31, 58]
+MP_obj = 112.576171875
+K_not length = 22 out of 51
+K_not weight total = 0.1220703125
+Overall runtime = 12.687000036239624
+No. iterations = 17
+
+Start of 149
+
+Instance ./Instances/testInstance_149.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3, 18, 34]
+MP_obj = 112.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 2.0930001735687256
+No. iterations = 2
+
+Start of 150
+
+Instance ./Instances/testInstance_150.jl
+α = 0.5
+delta2 = 2
+Interdiction = [50, 53, 54]
+MP_obj = 87.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 2.2060000896453857
+No. iterations = 2
+
+Start of 151
+
+Instance ./Instances/testInstance_151.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3, 43, 50]
+MP_obj = 91.6526485979557
+K_not length = 22 out of 842
+K_not weight total = 0.00299072265625
+Overall runtime = 21.860000133514404
+No. iterations = 27
+
+Start of 152
+
+Instance ./Instances/testInstance_152.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 31, 63]
+MP_obj = 107.13869987509679
+K_not length = 0 out of 68277
+K_not weight total = 0
+Overall runtime = 590.9839999675751
+No. iterations = 26
+
+Start of 153
+
+Instance ./Instances/testInstance_153.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 38, 55]
+MP_obj = 161.7109375
+K_not length = 13 out of 87
+K_not weight total = 0.035980224609375
+Overall runtime = 14.125
+No. iterations = 19
+
+Start of 154
+
+Instance ./Instances/testInstance_154.jl
+α = 0.5
+delta2 = 2
+Interdiction = [5, 48]
+MP_obj = 34.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.5829999446868896
+No. iterations = 1
+
+Start of 155
+
+Instance ./Instances/testInstance_155.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 3, 46]
+MP_obj = 108.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 2.4160001277923584
+No. iterations = 2
+
+Start of 156
+
+Instance ./Instances/testInstance_156.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 6, 29]
+MP_obj = 59.0
+K_not length = 1 out of 4
+K_not weight total = 0.25
+Overall runtime = 4.2170000076293945
+No. iterations = 5
+
+Start of 157
+
+Instance ./Instances/testInstance_157.jl
+α = 0.5
+delta2 = 2
+Interdiction = [5, 44, 57]
+MP_obj = 86.81421864032745
+K_not length = 27 out of 1052
+K_not weight total = 0.3955078125
+Overall runtime = 17.22099995613098
+No. iterations = 19
+
+Start of 158
+
+Instance ./Instances/testInstance_158.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 45, 65]
+MP_obj = 88.5
+K_not length = 4 out of 7
+K_not weight total = 0.46875
+Overall runtime = 5.394999980926514
+No. iterations = 7
+
+Start of 159
+
+Instance ./Instances/testInstance_159.jl
+α = 0.5
+delta2 = 2
+Interdiction = [4]
+MP_obj = 29.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.6129999160766602
+No. iterations = 1
+
+Start of 160
+
+Instance ./Instances/testInstance_160.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 34, 56]
+MP_obj = 141.72369014015658
+K_not length = 205 out of 22665
+K_not weight total = 0.4866459369659424
+Overall runtime = 529.1470000743866
+No. iterations = 44
+
+Start of 161
+
+Instance ./Instances/testInstance_161.jl
+α = 0.5
+delta2 = 2
+Interdiction = [7, 34, 65]
+MP_obj = 124.3300167042762
+K_not length = 63 out of 7399
+K_not weight total = 0.49365234375
+Overall runtime = 61.95900011062622
+No. iterations = 25
+
+Start of 162
+
+Instance ./Instances/testInstance_162.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 4, 23]
+MP_obj = 86.77392578125
+K_not length = 20 out of 203
+K_not weight total = 0.19921875
+Overall runtime = 10.83299994468689
+No. iterations = 14
+
+Start of 163
+
+Instance ./Instances/testInstance_163.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 7, 25]
+MP_obj = 66.74395751953125
+K_not length = 18 out of 88
+K_not weight total = 0.46875
+Overall runtime = 10.358999967575073
+No. iterations = 14
+
+Start of 164
+
+Instance ./Instances/testInstance_164.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 8, 37]
+MP_obj = 233.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.5520000457763672
+No. iterations = 1
+
+Start of 165
+
+Instance ./Instances/testInstance_165.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 9, 37]
+MP_obj = 93.8797059059143
+K_not length = 32 out of 892
+K_not weight total = 0.001430511474609375
+Overall runtime = 19.133000135421753
+No. iterations = 21
+
+Start of 166
+
+Instance ./Instances/testInstance_166.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 43, 50]
+MP_obj = 116.56545170024037
+K_not length = 2412 out of 86610
+K_not weight total = 0.07695579528808594
+Overall runtime = 619.9930000305176
+No. iterations = 23
+
+Start of 167
+
+Instance ./Instances/testInstance_167.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3, 51, 52]
+MP_obj = 104.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 3.116999864578247
+No. iterations = 3
+
+Start of 168
+
+Instance ./Instances/testInstance_168.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 12, 36]
+MP_obj = 77.99076080322266
+K_not length = 0 out of 207
+K_not weight total = 0
+Overall runtime = 12.815999984741211
+No. iterations = 16
+
+Start of 169
+
+Instance ./Instances/testInstance_169.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3, 35, 52]
+MP_obj = 93.57421875
+K_not length = 3 out of 5
+K_not weight total = 0.4375
+Overall runtime = 4.208999872207642
+No. iterations = 5
+
+Start of 170
+
+Instance ./Instances/testInstance_170.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 3, 16]
+MP_obj = 39.643310546875
+K_not length = 0 out of 7
+K_not weight total = 0
+Overall runtime = 5.490000009536743
+No. iterations = 7
+
+Start of 171
+
+Instance ./Instances/testInstance_171.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 34, 36]
+MP_obj = 112.58289337158203
+K_not length = 424 out of 1336
+K_not weight total = 0.17547607421875
+Overall runtime = 17.75
+No. iterations = 18
+
+Start of 172
+
+Instance ./Instances/testInstance_172.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 23, 39]
+MP_obj = 110.75
+K_not length = 2 out of 4
+K_not weight total = 0.5
+Overall runtime = 3.444000005722046
+No. iterations = 4
+
+Start of 173
+
+Instance ./Instances/testInstance_173.jl
+α = 0.5
+delta2 = 2
+Interdiction = [4, 7, 55]
+MP_obj = 72.0
+K_not length = 1 out of 3
+K_not weight total = 0.5
+Overall runtime = 3.5290000438690186
+No. iterations = 4
+
+Start of 174
+
+Instance ./Instances/testInstance_174.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 19, 44]
+MP_obj = 101.3710126876831
+K_not length = 1 out of 47
+K_not weight total = 0.03125
+Overall runtime = 9.843999862670898
+No. iterations = 14
+
+Start of 175
+
+Instance ./Instances/testInstance_175.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 8]
+MP_obj = 73.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.561999797821045
+No. iterations = 1
+
+Start of 176
+
+Instance ./Instances/testInstance_176.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3, 6, 26]
+MP_obj = 33.31640625
+K_not length = 5 out of 14
+K_not weight total = 0.3515625
+Overall runtime = 6.832000017166138
+No. iterations = 9
+
+Start of 177
+
+Instance ./Instances/testInstance_177.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 4, 27]
+MP_obj = 104.60049656033516
+K_not length = 23 out of 488
+K_not weight total = 0.4552001953125
+Overall runtime = 17.94000005722046
+No. iterations = 24
+
+Start of 178
+
+Instance ./Instances/testInstance_178.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 27, 32]
+MP_obj = 246.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 2.7179999351501465
+No. iterations = 3
+
+Start of 179
+
+Instance ./Instances/testInstance_179.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 9, 36]
+MP_obj = 133.18359375
+K_not length = 0 out of 7
+K_not weight total = 0
+Overall runtime = 6.066999912261963
+No. iterations = 8
+
+Start of 180
+
+Instance ./Instances/testInstance_180.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 6, 33]
+MP_obj = 104.12109375
+K_not length = 11 out of 36
+K_not weight total = 0.4375
+Overall runtime = 8.719000101089478
+No. iterations = 12
+
+Start of 181
+
+Instance ./Instances/testInstance_181.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 5, 40]
+MP_obj = 113.73712208494544
+K_not length = 5 out of 994
+K_not weight total = 0.296875
+Overall runtime = 24.039000034332275
+No. iterations = 29
+
+Start of 182
+
+Instance ./Instances/testInstance_182.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 41, 52]
+MP_obj = 136.82024002075195
+K_not length = 12 out of 92
+K_not weight total = 0.375
+Overall runtime = 13.342000007629395
+No. iterations = 19
+
+Start of 183
+
+Instance ./Instances/testInstance_183.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 10, 69]
+MP_obj = 57.25430109258741
+K_not length = 1912 out of 63101
+K_not weight total = 0.4100170135498047
+Overall runtime = 545.0729999542236
+No. iterations = 29
+
+Start of 184
+
+Instance ./Instances/testInstance_184.jl
+α = 0.5
+delta2 = 2
+Interdiction = [19, 20, 64]
+MP_obj = 86.15746707704966
+K_not length = 212 out of 13408
+K_not weight total = 0.04167008399963379
+Overall runtime = 135.67000007629395
+No. iterations = 31
+
+Start of 185
+
+Instance ./Instances/testInstance_185.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 16, 71]
+MP_obj = 80.71940333023667
+K_not length = 0 out of 189
+K_not weight total = 0
+Overall runtime = 19.543999910354614
+No. iterations = 28
+
+Start of 186
+
+Instance ./Instances/testInstance_186.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 28, 58]
+MP_obj = 82.45835191011429
+K_not length = 0 out of 912
+K_not weight total = 0
+Overall runtime = 19.085999965667725
+No. iterations = 22
+
+Start of 187
+
+Instance ./Instances/testInstance_187.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 19, 61]
+MP_obj = 71.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.8950002193450928
+No. iterations = 1
+
+Start of 188
+
+Instance ./Instances/testInstance_188.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 4, 43]
+MP_obj = 133.86620807647705
+K_not length = 12 out of 233
+K_not weight total = 0.322265625
+Overall runtime = 13.159000158309937
+No. iterations = 18
+
+Start of 189
+
+Instance ./Instances/testInstance_189.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 2, 34]
+MP_obj = 145.0
+K_not length = 1 out of 4
+K_not weight total = 0.25
+Overall runtime = 3.5230000019073486
+No. iterations = 4
+
+Start of 190
+
+Instance ./Instances/testInstance_190.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 6, 29]
+MP_obj = 52.0
+K_not length = 1 out of 4
+K_not weight total = 0.25
+Overall runtime = 2.8469998836517334
+No. iterations = 3
+
+Start of 191
+
+Instance ./Instances/testInstance_191.jl
+α = 0.5
+delta2 = 2
+Interdiction = [6, 73]
+MP_obj = 34.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.5889999866485596
+No. iterations = 1
+
+Start of 192
+
+Instance ./Instances/testInstance_192.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 16, 50]
+MP_obj = 124.9735257178545
+K_not length = 0 out of 1102
+K_not weight total = 0
+Overall runtime = 21.878000020980835
+No. iterations = 25
+
+Start of 193
+
+Instance ./Instances/testInstance_193.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 54, 61]
+MP_obj = 83.49981794564519
+K_not length = 538 out of 4299
+K_not weight total = 0.3026958554983139
+Overall runtime = 49.13100004196167
+No. iterations = 31
+
+Start of 194
+
+Instance ./Instances/testInstance_194.jl
+α = 0.5
+delta2 = 2
+Interdiction = [5, 37, 50]
+MP_obj = 103.65625
+K_not length = 0 out of 4
+K_not weight total = 0
+Overall runtime = 4.144999980926514
+No. iterations = 5
+
+Start of 195
+
+Instance ./Instances/testInstance_195.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 35, 44]
+MP_obj = 120.439208984375
+K_not length = 0 out of 18
+K_not weight total = 0
+Overall runtime = 6.694000005722046
+No. iterations = 9
+
+Start of 196
+
+Instance ./Instances/testInstance_196.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 34, 56]
+MP_obj = 205.876220703125
+K_not length = 1 out of 7
+K_not weight total = 0.5
+Overall runtime = 6.615000009536743
+No. iterations = 9
+
+Start of 197
+
+Instance ./Instances/testInstance_197.jl
+α = 0.5
+delta2 = 2
+Interdiction = [27, 32, 38]
+MP_obj = 92.82895588874817
+K_not length = 55 out of 938
+K_not weight total = 0.019588470458984375
+Overall runtime = 19.54200005531311
+No. iterations = 22
+
+Start of 198
+
+Instance ./Instances/testInstance_198.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3, 30, 37]
+MP_obj = 97.75
+K_not length = 0 out of 2
+K_not weight total = 0
+Overall runtime = 2.808000087738037
+No. iterations = 3
+
+Start of 199
+
+Instance ./Instances/testInstance_199.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 22, 67]
+MP_obj = 65.80298614501953
+K_not length = 4 out of 53
+K_not weight total = 0.3173828125
+Overall runtime = 10.32800006866455
+No. iterations = 15
+
+Start of 200
+
+Instance ./Instances/testInstance_200.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 15, 31]
+MP_obj = 453.2265625
+K_not length = 1 out of 5
+K_not weight total = 0.5
+Overall runtime = 5.990000009536743
+No. iterations = 8
+
+Start of 201
+
+Instance ./Instances/testInstance_201.jl
+α = 0.5
+delta2 = 2
+Interdiction = [4, 48, 52]
+MP_obj = 53.057987213134766
+K_not length = 11 out of 34
+K_not weight total = 0.49951171875
+Overall runtime = 11.122999906539917
+No. iterations = 16
+
+Start of 202
+
+Instance ./Instances/testInstance_202.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 23, 66]
+MP_obj = 81.26953125
+K_not length = 3 out of 12
+K_not weight total = 0.25
+Overall runtime = 5.990000009536743
+No. iterations = 8
+
+Start of 203
+
+Instance ./Instances/testInstance_203.jl
+α = 0.5
+delta2 = 2
+Interdiction = [25, 48, 59]
+MP_obj = 86.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 2.1539998054504395
+No. iterations = 2
+
+Start of 204
+
+Instance ./Instances/testInstance_204.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 12, 42]
+MP_obj = 57.46409757887159
+K_not length = 14 out of 16304
+K_not weight total = 0.034881591796875
+Overall runtime = 226.87400007247925
+No. iterations = 45
+
+Start of 205
+
+Instance ./Instances/testInstance_205.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 10, 51]
+MP_obj = 75.1093533039093
+K_not length = 0 out of 450
+K_not weight total = 0
+Overall runtime = 15.490999937057495
+No. iterations = 19
+
+Start of 206
+
+Instance ./Instances/testInstance_206.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 12]
+MP_obj = 53.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.5920000076293945
+No. iterations = 1
+
+Start of 207
+
+Instance ./Instances/testInstance_207.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 13, 46]
+MP_obj = 72.90689460933208
+K_not length = 1655 out of 60626
+K_not weight total = 0.1643282175064087
+Overall runtime = 530.0499999523163
+No. iterations = 27
+
+Start of 208
+
+Instance ./Instances/testInstance_208.jl
+α = 0.5
+delta2 = 2
+Interdiction = [9, 37, 38]
+MP_obj = 199.63644575130274
+K_not length = 1020 out of 11720
+K_not weight total = 0.2985331218224019
+Overall runtime = 154.04399991035461
+No. iterations = 37
+
+Start of 209
+
+Instance ./Instances/testInstance_209.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 38, 46]
+MP_obj = 60.9307995736599
+K_not length = 25 out of 622
+K_not weight total = 0.055023193359375
+Overall runtime = 16.747999906539917
+No. iterations = 20
+
+Start of 210
+
+Instance ./Instances/testInstance_210.jl
+α = 0.5
+delta2 = 2
+Interdiction = [37, 44, 49]
+MP_obj = 121.63126673549414
+K_not length = 2007 out of 91058
+K_not weight total = 0.18653488159179688
+Overall runtime = 660.2900002002716
+No. iterations = 25
+
+Start of 211
+
+Instance ./Instances/testInstance_211.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 3]
+MP_obj = 64.5
+K_not length = 168 out of 276
+K_not weight total = 0.1796875
+Overall runtime = 13.660999774932861
+No. iterations = 18
+
+Start of 212
+
+Instance ./Instances/testInstance_212.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 2, 5]
+MP_obj = 76.05835008621216
+K_not length = 9 out of 59
+K_not weight total = 0.45703125
+Overall runtime = 12.569999933242798
+No. iterations = 18
+
+Start of 213
+
+Instance ./Instances/testInstance_213.jl
+α = 0.5
+delta2 = 2
+Interdiction = [5, 43]
+MP_obj = 60.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.5989999771118164
+No. iterations = 1
+
+Start of 214
+
+Instance ./Instances/testInstance_214.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 6, 10]
+MP_obj = 162.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 2.7029998302459717
+No. iterations = 3
+
+Start of 215
+
+Instance ./Instances/testInstance_215.jl
+α = 0.5
+delta2 = 2
+Interdiction = [19, 20, 50]
+MP_obj = 313.46875
+K_not length = 6 out of 15
+K_not weight total = 0.46875
+Overall runtime = 7.312000036239624
+No. iterations = 10
+
+Start of 216
+
+Instance ./Instances/testInstance_216.jl
+α = 0.5
+delta2 = 2
+Interdiction = [8]
+MP_obj = 23.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.6079998016357422
+No. iterations = 1
+
+Start of 217
+
+Instance ./Instances/testInstance_217.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 14, 21]
+MP_obj = 62.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.6180000305175781
+No. iterations = 1
+
+Start of 218
+
+Instance ./Instances/testInstance_218.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 48, 56]
+MP_obj = 92.70956130808918
+K_not length = 0 out of 1515
+K_not weight total = 0
+Overall runtime = 27.858999967575073
+No. iterations = 31
+
+Start of 219
+
+Instance ./Instances/testInstance_219.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 2, 8]
+MP_obj = 132.4326171875
+K_not length = 1 out of 6
+K_not weight total = 0.25
+Overall runtime = 4.742000102996826
+No. iterations = 6
+
+Start of 220
+
+Instance ./Instances/testInstance_220.jl
+α = 0.5
+delta2 = 2
+Interdiction = [51, 53, 59]
+MP_obj = 139.95585823059082
+K_not length = 1859 out of 18395
+K_not weight total = 0.157243013381958
+Overall runtime = 209.69200015068054
+No. iterations = 32
+
+Start of 221
+
+Instance ./Instances/testInstance_221.jl
+α = 0.5
+delta2 = 2
+Interdiction = [4, 27]
+MP_obj = 77.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.7109999656677246
+No. iterations = 1
+
+Start of 222
+
+Instance ./Instances/testInstance_222.jl
+α = 0.5
+delta2 = 2
+Interdiction = [4]
+MP_obj = 31.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.6489999294281006
+No. iterations = 1
+
+Start of 223
+
+Instance ./Instances/testInstance_223.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 22, 54]
+MP_obj = 118.6712498664856
+K_not length = 16 out of 181
+K_not weight total = 0.4248046875
+Overall runtime = 11.661999940872192
+No. iterations = 16
+
+Start of 224
+
+Instance ./Instances/testInstance_224.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3, 20, 52]
+MP_obj = 47.5
+K_not length = 0 out of 480
+K_not weight total = 0
+Overall runtime = 18.247999906539917
+No. iterations = 25
+
+Start of 225
+
+Instance ./Instances/testInstance_225.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 46, 50]
+MP_obj = 208.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.5989999771118164
+No. iterations = 1
+
+Start of 226
+
+Instance ./Instances/testInstance_226.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 4, 54]
+MP_obj = 112.578125
+K_not length = 7 out of 17
+K_not weight total = 0.453125
+Overall runtime = 7.496000051498413
+No. iterations = 10
+
+Start of 227
+
+Instance ./Instances/testInstance_227.jl
+α = 0.5
+delta2 = 2
+Interdiction = [12, 20, 54]
+MP_obj = 116.19879150390625
+K_not length = 8 out of 41
+K_not weight total = 0.30078125
+Overall runtime = 9.068000078201294
+No. iterations = 13
+
+Start of 228
+
+Instance ./Instances/testInstance_228.jl
+α = 0.5
+delta2 = 2
+Interdiction = [7, 12, 19]
+MP_obj = 66.8056640625
+K_not length = 0 out of 15
+K_not weight total = 0
+Overall runtime = 6.642000198364258
+No. iterations = 9
+
+Start of 229
+
+Instance ./Instances/testInstance_229.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 5, 28]
+MP_obj = 103.2315673828125
+K_not length = 3 out of 22
+K_not weight total = 0.025390625
+Overall runtime = 8.015000104904175
+No. iterations = 11
+
+Start of 230
+
+Instance ./Instances/testInstance_230.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3, 4, 60]
+MP_obj = 68.68731689453125
+K_not length = 59 out of 3508
+K_not weight total = 0.3974609375
+Overall runtime = 34.2960000038147
+No. iterations = 26
+
+Start of 231
+
+Instance ./Instances/testInstance_231.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 44, 53]
+MP_obj = 100.8295030593872
+K_not length = 62 out of 296
+K_not weight total = 0.369842529296875
+Overall runtime = 14.551000118255615
+No. iterations = 20
+
+Start of 232
+
+Instance ./Instances/testInstance_232.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 2, 60]
+MP_obj = 78.62597465515137
+K_not length = 11 out of 89
+K_not weight total = 0.228515625
+Overall runtime = 12.123000144958496
+No. iterations = 17
+
+Start of 233
+
+Instance ./Instances/testInstance_233.jl
+α = 0.5
+delta2 = 2
+Interdiction = [29, 39, 64]
+MP_obj = 103.0
+K_not length = 8 out of 18
+K_not weight total = 0.32421875
+Overall runtime = 7.732000112533569
+No. iterations = 11
+
+Start of 234
+
+Instance ./Instances/testInstance_234.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 27]
+MP_obj = 62.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.5809998512268066
+No. iterations = 1
+
+Start of 235
+
+Instance ./Instances/testInstance_235.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 18, 46]
+MP_obj = 165.8614865615964
+K_not length = 8638 out of 105168
+K_not weight total = 0.23371315002441406
+Overall runtime = 726.805999994278
+No. iterations = 22
+
+Start of 236
+
+Instance ./Instances/testInstance_236.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 53, 62]
+MP_obj = 93.5
+K_not length = 0 out of 4
+K_not weight total = 0
+Overall runtime = 5.107000112533569
+No. iterations = 6
+
+Start of 237
+
+Instance ./Instances/testInstance_237.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 32, 35]
+MP_obj = 94.422119140625
+K_not length = 0 out of 1122
+K_not weight total = 0
+Overall runtime = 24.867000102996826
+No. iterations = 31
+
+Start of 238
+
+Instance ./Instances/testInstance_238.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3, 6, 23]
+MP_obj = 69.69758069515228
+K_not length = 0 out of 48
+K_not weight total = 0
+Overall runtime = 12.95799994468689
+No. iterations = 19
+
+Start of 239
+
+Instance ./Instances/testInstance_239.jl
+α = 0.5
+delta2 = 2
+Interdiction = [17, 25, 45]
+MP_obj = 91.36091613769531
+K_not length = 0 out of 59
+K_not weight total = 0
+Overall runtime = 9.651999950408936
+No. iterations = 13
+
+Start of 240
+
+Instance ./Instances/testInstance_240.jl
+α = 0.5
+delta2 = 2
+Interdiction = [43, 52, 58]
+MP_obj = 146.92331542819738
+K_not length = 3966 out of 131076
+K_not weight total = 0.16221237182617188
+Overall runtime = 732.337000131607
+No. iterations = 20
+
+Start of 241
+
+Instance ./Instances/testInstance_241.jl
+α = 0.5
+delta2 = 2
+Interdiction = [4]
+MP_obj = 54.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.8569998741149902
+No. iterations = 1
+
+Start of 242
+
+Instance ./Instances/testInstance_242.jl
+α = 0.5
+delta2 = 2
+Interdiction = [4, 47]
+MP_obj = 36.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 2.2249999046325684
+No. iterations = 1
+
+Start of 243
+
+Instance ./Instances/testInstance_243.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 11, 22]
+MP_obj = 110.0
+K_not length = 2 out of 3
+K_not weight total = 0.5
+Overall runtime = 3.134000062942505
+No. iterations = 3
+
+Start of 244
+
+Instance ./Instances/testInstance_244.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 20, 35]
+MP_obj = 91.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.6130001544952393
+No. iterations = 1
+
+Start of 245
+
+Instance ./Instances/testInstance_245.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 27, 49]
+MP_obj = 172.3984375
+K_not length = 1 out of 5
+K_not weight total = 0.5
+Overall runtime = 4.75
+No. iterations = 6
+
+Start of 246
+
+Instance ./Instances/testInstance_246.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 17, 27]
+MP_obj = 120.20110702514648
+K_not length = 9 out of 37
+K_not weight total = 0.4765625
+Overall runtime = 10.696000099182129
+No. iterations = 15
+
+Start of 247
+
+Instance ./Instances/testInstance_247.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 23, 39]
+MP_obj = 179.0917205810547
+K_not length = 6 out of 47
+K_not weight total = 0.453125
+Overall runtime = 9.755000114440918
+No. iterations = 14
+
+Start of 248
+
+Instance ./Instances/testInstance_248.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3, 37, 40]
+MP_obj = 148.94694805145264
+K_not length = 11 out of 104
+K_not weight total = 0.14453125
+Overall runtime = 11.901000022888184
+No. iterations = 17
+
+Start of 249
+
+Instance ./Instances/testInstance_249.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 41, 43]
+MP_obj = 76.6286735534668
+K_not length = 0 out of 1742
+K_not weight total = 0
+Overall runtime = 23.848999977111816
+No. iterations = 23
+
+Start of 250
+
+Instance ./Instances/testInstance_250.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 7, 41]
+MP_obj = 210.92854803566433
+K_not length = 155 out of 55307
+K_not weight total = 0.49020909518003464
+Overall runtime = 546.5499999523163
+No. iterations = 34
+
+Start of 251
+
+Instance ./Instances/testInstance_251.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 6, 19]
+MP_obj = 80.97068045288324
+K_not length = 2383 out of 89240
+K_not weight total = 0.3945140838623047
+Overall runtime = 639.2990000247955
+No. iterations = 27
+
+Start of 252
+
+Instance ./Instances/testInstance_252.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 3, 35]
+MP_obj = 74.07169761974365
+K_not length = 0 out of 1635
+K_not weight total = 0
+Overall runtime = 27.227999925613403
+No. iterations = 26
+
+Start of 253
+
+Instance ./Instances/testInstance_253.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 6, 27]
+MP_obj = 99.0
+K_not length = 2 out of 4
+K_not weight total = 0.375
+Overall runtime = 4.110000133514404
+No. iterations = 5
+
+Start of 254
+
+Instance ./Instances/testInstance_254.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 24, 43]
+MP_obj = 109.06963642559276
+K_not length = 514 out of 12205
+K_not weight total = 0.26392662525177
+Overall runtime = 124.72000002861023
+No. iterations = 32
+
+Start of 255
+
+Instance ./Instances/testInstance_255.jl
+α = 0.5
+delta2 = 2
+Interdiction = [5]
+MP_obj = 12.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.6359999179840088
+No. iterations = 1
+
+Start of 256
+
+Instance ./Instances/testInstance_256.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 53, 67]
+MP_obj = 70.43116131494753
+K_not length = 50 out of 5871
+K_not weight total = 0.304962158203125
+Overall runtime = 75.61600017547607
+No. iterations = 37
+
+Start of 257
+
+Instance ./Instances/testInstance_257.jl
+α = 0.5
+delta2 = 2
+Interdiction = [5, 61]
+MP_obj = 32.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.6349999904632568
+No. iterations = 1
+
+Start of 258
+
+Instance ./Instances/testInstance_258.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 26, 32]
+MP_obj = 88.75
+K_not length = 0 out of 2
+K_not weight total = 0
+Overall runtime = 2.889000177383423
+No. iterations = 3
+
+Start of 259
+
+Instance ./Instances/testInstance_259.jl
+α = 0.5
+delta2 = 2
+Interdiction = [5]
+MP_obj = 48.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.565000057220459
+No. iterations = 1
+
+Start of 260
+
+Instance ./Instances/testInstance_260.jl
+α = 0.5
+delta2 = 2
+Interdiction = [4]
+MP_obj = 63.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.6100001335144043
+No. iterations = 1
+
+Start of 261
+
+Instance ./Instances/testInstance_261.jl
+α = 0.5
+delta2 = 2
+Interdiction = [46, 59, 64]
+MP_obj = 77.77268981933594
+K_not length = 7 out of 1576
+K_not weight total = 0.000637054443359375
+Overall runtime = 25.533999919891357
+No. iterations = 26
+
+Start of 262
+
+Instance ./Instances/testInstance_262.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 6, 67]
+MP_obj = 56.0
+K_not length = 0 out of 2
+K_not weight total = 0
+Overall runtime = 3.9670000076293945
+No. iterations = 5
+
+Start of 263
+
+Instance ./Instances/testInstance_263.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 17]
+MP_obj = 243.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.5729999542236328
+No. iterations = 1
+
+Start of 264
+
+Instance ./Instances/testInstance_264.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3, 4, 36]
+MP_obj = 80.8705689907074
+K_not length = 0 out of 186
+K_not weight total = 0
+Overall runtime = 13.329999923706055
+No. iterations = 19
+
+Start of 265
+
+Instance ./Instances/testInstance_265.jl
+α = 0.5
+delta2 = 2
+Interdiction = [9, 19, 31]
+MP_obj = 73.693603515625
+K_not length = 0 out of 26
+K_not weight total = 0
+Overall runtime = 7.465000152587891
+No. iterations = 10
+
+Start of 266
+
+Instance ./Instances/testInstance_266.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 16, 46]
+MP_obj = 122.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.6560001373291016
+No. iterations = 1
+
+Start of 267
+
+Instance ./Instances/testInstance_267.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 20, 41]
+MP_obj = 74.04757213249104
+K_not length = 350 out of 60720
+K_not weight total = 0.47001349925994873
+Overall runtime = 531.8630001544952
+No. iterations = 33
+
+Start of 268
+
+Instance ./Instances/testInstance_268.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3, 39, 66]
+MP_obj = 97.9468297958374
+K_not length = 6376 out of 117946
+K_not weight total = 0.4840688705444336
+Overall runtime = 820.75
+No. iterations = 24
+
+Start of 269
+
+Instance ./Instances/testInstance_269.jl
+α = 0.5
+delta2 = 2
+Interdiction = [5, 62, 69]
+MP_obj = 67.0
+K_not length = 0 out of 34
+K_not weight total = 0
+Overall runtime = 5.966000080108643
+No. iterations = 7
+
+Start of 270
+
+Instance ./Instances/testInstance_270.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 41, 52]
+MP_obj = 123.648681640625
+K_not length = 4656 out of 62905
+K_not weight total = 0.02678680419921875
+Overall runtime = 513.4140000343323
+No. iterations = 25
+
+Start of 271
+
+Instance ./Instances/testInstance_271.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3, 9, 53]
+MP_obj = 69.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 2.3359999656677246
+No. iterations = 2
+
+Start of 272
+
+Instance ./Instances/testInstance_272.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 16, 29]
+MP_obj = 190.4375
+K_not length = 1 out of 3
+K_not weight total = 0.5
+Overall runtime = 3.735999822616577
+No. iterations = 4
+
+Start of 273
+
+Instance ./Instances/testInstance_273.jl
+α = 0.5
+delta2 = 2
+Interdiction = [4]
+MP_obj = 23.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.5920000076293945
+No. iterations = 1
+
+Start of 274
+
+Instance ./Instances/testInstance_274.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 25, 38]
+MP_obj = 69.17333984375
+K_not length = 2 out of 11
+K_not weight total = 0.3125
+Overall runtime = 6.680000066757202
+No. iterations = 9
+
+Start of 275
+
+Instance ./Instances/testInstance_275.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 16, 49]
+MP_obj = 117.25
+K_not length = 2 out of 3
+K_not weight total = 0.5
+Overall runtime = 2.940999984741211
+No. iterations = 3
+
+Start of 276
+
+Instance ./Instances/testInstance_276.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 42]
+MP_obj = 44.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.624000072479248
+No. iterations = 1
+
+Start of 277
+
+Instance ./Instances/testInstance_277.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 2, 55]
+MP_obj = 86.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 2.2339999675750732
+No. iterations = 2
+
+Start of 278
+
+Instance ./Instances/testInstance_278.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 27, 36]
+MP_obj = 134.3132553100586
+K_not length = 26 out of 573
+K_not weight total = 0.0650482177734375
+Overall runtime = 14.861999988555908
+No. iterations = 18
+
+Start of 279
+
+Instance ./Instances/testInstance_279.jl
+α = 0.5
+delta2 = 2
+Interdiction = [4]
+MP_obj = 31.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.5820000171661377
+No. iterations = 1
+
+Start of 280
+
+Instance ./Instances/testInstance_280.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 29, 41]
+MP_obj = 85.45392908109352
+K_not length = 0 out of 67639
+K_not weight total = 0
+Overall runtime = 551.5640001296997
+No. iterations = 28
+
+Start of 281
+
+Instance ./Instances/testInstance_281.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 3, 53]
+MP_obj = 88.9721542596817
+K_not length = 3428 out of 114028
+K_not weight total = 0.40889739990234375
+Overall runtime = 769.3819999694824
+No. iterations = 21
+
+Start of 282
+
+Instance ./Instances/testInstance_282.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 7]
+MP_obj = 103.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.8489999771118164
+No. iterations = 1
+
+Start of 283
+
+Instance ./Instances/testInstance_283.jl
+α = 0.5
+delta2 = 2
+Interdiction = [5, 58]
+MP_obj = 19.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.871999979019165
+No. iterations = 1
+
+Start of 284
+
+Instance ./Instances/testInstance_284.jl
+α = 0.5
+delta2 = 2
+Interdiction = [38, 41, 49]
+MP_obj = 122.53755187988281
+K_not length = 8 out of 31
+K_not weight total = 0.4140625
+Overall runtime = 9.0239999294281
+No. iterations = 12
+
+Start of 285
+
+Instance ./Instances/testInstance_285.jl
+α = 0.5
+delta2 = 2
+Interdiction = [32, 51, 71]
+MP_obj = 75.15625
+K_not length = 2 out of 6
+K_not weight total = 0.3125
+Overall runtime = 5.813999891281128
+No. iterations = 8
+
+Start of 286
+
+Instance ./Instances/testInstance_286.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 26, 69]
+MP_obj = 105.43970291040023
+K_not length = 151 out of 2244
+K_not weight total = 0.3847465515136719
+Overall runtime = 33.218000173568726
+No. iterations = 31
+
+Start of 287
+
+Instance ./Instances/testInstance_287.jl
+α = 0.5
+delta2 = 2
+Interdiction = [29, 43, 59]
+MP_obj = 112.091796875
+K_not length = 22 out of 55
+K_not weight total = 0.09765625
+Overall runtime = 8.105000019073486
+No. iterations = 11
+
+Start of 288
+
+Instance ./Instances/testInstance_288.jl
+α = 0.5
+delta2 = 2
+Interdiction = [8]
+MP_obj = 24.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.5310001373291016
+No. iterations = 1
+
+Start of 289
+
+Instance ./Instances/testInstance_289.jl
+α = 0.5
+delta2 = 2
+Interdiction = [5, 34, 62]
+MP_obj = 67.0
+K_not length = 2 out of 6
+K_not weight total = 0.5
+Overall runtime = 4.16700005531311
+No. iterations = 5
+
+Start of 290
+
+Instance ./Instances/testInstance_290.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3]
+MP_obj = 46.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.5729999542236328
+No. iterations = 1
+
+Start of 291
+
+Instance ./Instances/testInstance_291.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 5, 33]
+MP_obj = 178.84441757202148
+K_not length = 37 out of 189
+K_not weight total = 0.451446533203125
+Overall runtime = 12.930000066757202
+No. iterations = 18
+
+Start of 292
+
+Instance ./Instances/testInstance_292.jl
+α = 0.5
+delta2 = 2
+Interdiction = [4, 48, 65]
+MP_obj = 87.34375
+K_not length = 0 out of 5
+K_not weight total = 0
+Overall runtime = 5.317000150680542
+No. iterations = 7
+
+Start of 293
+
+Instance ./Instances/testInstance_293.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 43, 64]
+MP_obj = 110.44314384460449
+K_not length = 3228 out of 68732
+K_not weight total = 0.268310546875
+Overall runtime = 672.6449999809265
+No. iterations = 28
+
+Start of 294
+
+Instance ./Instances/testInstance_294.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 31, 37]
+MP_obj = 134.8398892506957
+K_not length = 0 out of 41946
+K_not weight total = 0
+Overall runtime = 501.720999956131
+No. iterations = 29
+
+Start of 295
+
+Instance ./Instances/testInstance_295.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 16, 70]
+MP_obj = 63.88199281692505
+K_not length = 0 out of 100
+K_not weight total = 0
+Overall runtime = 13.339999914169312
+No. iterations = 18
+
+Start of 296
+
+Instance ./Instances/testInstance_296.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 9, 50]
+MP_obj = 127.29838371276855
+K_not length = 0 out of 3081
+K_not weight total = 0
+Overall runtime = 33.20599985122681
+No. iterations = 24
+
+Start of 297
+
+Instance ./Instances/testInstance_297.jl
+α = 0.5
+delta2 = 2
+Interdiction = [56, 60, 62]
+MP_obj = 124.31243474781513
+K_not length = 0 out of 46496
+K_not weight total = 0
+Overall runtime = 520.9739999771118
+No. iterations = 23
+
+Start of 298
+
+Instance ./Instances/testInstance_298.jl
+α = 0.5
+delta2 = 2
+Interdiction = [5]
+MP_obj = 54.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.7230000495910645
+No. iterations = 1
+
+Start of 299
+
+Instance ./Instances/testInstance_299.jl
+α = 0.5
+delta2 = 2
+Interdiction = [7]
+MP_obj = 14.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.6970000267028809
+No. iterations = 1
+
+Start of 300
+
+Instance ./Instances/testInstance_300.jl
+α = 0.5
+delta2 = 2
+Interdiction = [12, 41, 52]
+MP_obj = 76.5589599609375
+K_not length = 2 out of 74
+K_not weight total = 0.0625
+Overall runtime = 11.631999969482422
+No. iterations = 16
+
+Start of 301
+
+Instance ./Instances/testInstance_301.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 25, 49]
+MP_obj = 146.125
+K_not length = 0 out of 15
+K_not weight total = 0
+Overall runtime = 7.2230000495910645
+No. iterations = 10
+
+Start of 302
+
+Instance ./Instances/testInstance_302.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 25, 40]
+MP_obj = 146.3921446800232
+K_not length = 7 out of 1246
+K_not weight total = 0.43359375
+Overall runtime = 21.23099994659424
+No. iterations = 23
+
+Start of 303
+
+Instance ./Instances/testInstance_303.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 17, 59]
+MP_obj = 72.57676427438855
+K_not length = 5341 out of 85963
+K_not weight total = 0.13140869140625
+Overall runtime = 683.795000076294
+No. iterations = 23
+
+Start of 304
+
+Instance ./Instances/testInstance_304.jl
+α = 0.5
+delta2 = 2
+Interdiction = [6]
+MP_obj = 48.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.805999994277954
+No. iterations = 1
+
+Start of 305
+
+Instance ./Instances/testInstance_305.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 19, 54]
+MP_obj = 92.40866203140467
+K_not length = 135 out of 1167
+K_not weight total = 0.45415496826171875
+Overall runtime = 23.63599991798401
+No. iterations = 27
+
+Start of 306
+
+Instance ./Instances/testInstance_306.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 52, 56]
+MP_obj = 136.87249755859375
+K_not length = 340 out of 8190
+K_not weight total = 0.03118896484375
+Overall runtime = 60.52499985694885
+No. iterations = 24
+
+Start of 307
+
+Instance ./Instances/testInstance_307.jl
+α = 0.5
+delta2 = 2
+Interdiction = [28, 40, 46]
+MP_obj = 80.94682025909424
+K_not length = 0 out of 56
+K_not weight total = 0
+Overall runtime = 11.312000036239624
+No. iterations = 16
+
+Start of 308
+
+Instance ./Instances/testInstance_308.jl
+α = 0.5
+delta2 = 2
+Interdiction = [5, 15, 53]
+MP_obj = 111.66046840138733
+K_not length = 0 out of 1814
+K_not weight total = 0
+Overall runtime = 29.810999870300293
+No. iterations = 29
+
+Start of 309
+
+Instance ./Instances/testInstance_309.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3, 4, 48]
+MP_obj = 113.5188955143094
+K_not length = 0 out of 534
+K_not weight total = 0
+Overall runtime = 20.036999940872192
+No. iterations = 26
+
+Start of 310
+
+Instance ./Instances/testInstance_310.jl
+α = 0.5
+delta2 = 2
+Interdiction = [4, 23, 42]
+MP_obj = 47.8369140625
+K_not length = 2 out of 15
+K_not weight total = 0.078125
+Overall runtime = 6.366000175476074
+No. iterations = 8
+
+Start of 311
+
+Instance ./Instances/testInstance_311.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 28, 45]
+MP_obj = 120.298828125
+K_not length = 2 out of 94
+K_not weight total = 0.5
+Overall runtime = 10.02999997138977
+No. iterations = 14
+
+Start of 312
+
+Instance ./Instances/testInstance_312.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 8, 62]
+MP_obj = 123.93682043557055
+K_not length = 1117 out of 12909
+K_not weight total = 0.03044387698173523
+Overall runtime = 131.08699989318848
+No. iterations = 30
+
+Start of 313
+
+Instance ./Instances/testInstance_313.jl
+α = 0.5
+delta2 = 2
+Interdiction = [12, 55, 66]
+MP_obj = 83.37102485867217
+K_not length = 3692 out of 71521
+K_not weight total = 0.36125604808330536
+Overall runtime = 614.6400001049042
+No. iterations = 29
+
+Start of 314
+
+Instance ./Instances/testInstance_314.jl
+α = 0.5
+delta2 = 2
+Interdiction = [4, 39, 46]
+MP_obj = 61.554534912109375
+K_not length = 8 out of 54
+K_not weight total = 0.33056640625
+Overall runtime = 10.68999981880188
+No. iterations = 14
+
+Start of 315
+
+Instance ./Instances/testInstance_315.jl
+α = 0.5
+delta2 = 2
+Interdiction = [4, 5, 45]
+MP_obj = 64.984130859375
+K_not length = 4 out of 8
+K_not weight total = 0.46875
+Overall runtime = 6.514999866485596
+No. iterations = 9
+
+Start of 316
+
+Instance ./Instances/testInstance_316.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 7, 25]
+MP_obj = 317.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.5829999446868896
+No. iterations = 1
+
+Start of 317
+
+Instance ./Instances/testInstance_317.jl
+α = 0.5
+delta2 = 2
+Interdiction = [42, 55, 59]
+MP_obj = 138.4724614964798
+K_not length = 2742 out of 92849
+K_not weight total = 0.11429977416992188
+Overall runtime = 840.2869999408722
+No. iterations = 26
+
+Start of 318
+
+Instance ./Instances/testInstance_318.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 5, 34]
+MP_obj = 118.0
+K_not length = 0 out of 2
+K_not weight total = 0
+Overall runtime = 3.919999837875366
+No. iterations = 4
+
+Start of 319
+
+Instance ./Instances/testInstance_319.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 31, 52]
+MP_obj = 146.513671875
+K_not length = 1 out of 6
+K_not weight total = 0.5
+Overall runtime = 5.455999851226807
+No. iterations = 7
+
+Start of 320
+
+Instance ./Instances/testInstance_320.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 3, 71]
+MP_obj = 90.853515625
+K_not length = 0 out of 6
+K_not weight total = 0
+Overall runtime = 6.635999917984009
+No. iterations = 9
+
+Start of 321
+
+Instance ./Instances/testInstance_321.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 4, 42]
+MP_obj = 155.86087036132812
+K_not length = 6 out of 25
+K_not weight total = 0.2421875
+Overall runtime = 8.288000106811523
+No. iterations = 11
+
+Start of 322
+
+Instance ./Instances/testInstance_322.jl
+α = 0.5
+delta2 = 2
+Interdiction = [18, 31, 57]
+MP_obj = 74.44136142730713
+K_not length = 2922 out of 90049
+K_not weight total = 0.15683364868164062
+Overall runtime = 564.8259999752045
+No. iterations = 22
+
+Start of 323
+
+Instance ./Instances/testInstance_323.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 12, 24]
+MP_obj = 75.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.8910000324249268
+No. iterations = 1
+
+Start of 324
+
+Instance ./Instances/testInstance_324.jl
+α = 0.5
+delta2 = 2
+Interdiction = [15, 52, 57]
+MP_obj = 143.2576904296875
+K_not length = 0 out of 24
+K_not weight total = 0
+Overall runtime = 9.119999885559082
+No. iterations = 12
+
+Start of 325
+
+Instance ./Instances/testInstance_325.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 26, 56]
+MP_obj = 103.4439926147461
+K_not length = 0 out of 14
+K_not weight total = 0
+Overall runtime = 8.730999946594238
+No. iterations = 12
+
+Start of 326
+
+Instance ./Instances/testInstance_326.jl
+α = 0.5
+delta2 = 2
+Interdiction = [10, 15, 28]
+MP_obj = 102.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 2.184999942779541
+No. iterations = 2
+
+Start of 327
+
+Instance ./Instances/testInstance_327.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 31, 39]
+MP_obj = 91.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.5980000495910645
+No. iterations = 1
+
+Start of 328
+
+Instance ./Instances/testInstance_328.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 31, 53]
+MP_obj = 73.75019159540534
+K_not length = 4 out of 86207
+K_not weight total = 0.375
+Overall runtime = 583.2310001850128
+No. iterations = 33
+
+Start of 329
+
+Instance ./Instances/testInstance_329.jl
+α = 0.5
+delta2 = 2
+Interdiction = [6]
+MP_obj = 27.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.8299999237060547
+No. iterations = 1
+
+Start of 330
+
+Instance ./Instances/testInstance_330.jl
+α = 0.5
+delta2 = 2
+Interdiction = [44, 49, 70]
+MP_obj = 59.5234375
+K_not length = 6 out of 20
+K_not weight total = 0.4375
+Overall runtime = 8.938000202178955
+No. iterations = 12
+
+Start of 331
+
+Instance ./Instances/testInstance_331.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3, 57]
+MP_obj = 87.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.6629998683929443
+No. iterations = 1
+
+Start of 332
+
+Instance ./Instances/testInstance_332.jl
+α = 0.5
+delta2 = 2
+Interdiction = [40, 42, 51]
+MP_obj = 53.48486328125
+K_not length = 0 out of 15
+K_not weight total = 0
+Overall runtime = 8.578999996185303
+No. iterations = 12
+
+Start of 333
+
+Instance ./Instances/testInstance_333.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 31, 34]
+MP_obj = 51.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 2.7690000534057617
+No. iterations = 3
+
+Start of 334
+
+Instance ./Instances/testInstance_334.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 2, 30]
+MP_obj = 94.25
+K_not length = 2 out of 4
+K_not weight total = 0.5
+Overall runtime = 4.697000026702881
+No. iterations = 6
+
+Start of 335
+
+Instance ./Instances/testInstance_335.jl
+α = 0.5
+delta2 = 2
+Interdiction = [4, 43, 52]
+MP_obj = 52.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.5850000381469727
+No. iterations = 1
+
+Start of 336
+
+Instance ./Instances/testInstance_336.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 20, 22]
+MP_obj = 80.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 2.1499998569488525
+No. iterations = 2
+
+Start of 337
+
+Instance ./Instances/testInstance_337.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 15, 64]
+MP_obj = 130.53515625
+K_not length = 1 out of 19
+K_not weight total = 0.25
+Overall runtime = 8.067999839782715
+No. iterations = 11
+
+Start of 338
+
+Instance ./Instances/testInstance_338.jl
+α = 0.5
+delta2 = 2
+Interdiction = [27, 31, 43]
+MP_obj = 96.00032043457031
+K_not length = 7 out of 22
+K_not weight total = 0.42578125
+Overall runtime = 9.662999868392944
+No. iterations = 14
+
+Start of 339
+
+Instance ./Instances/testInstance_339.jl
+α = 0.5
+delta2 = 2
+Interdiction = [32, 34, 51]
+MP_obj = 125.0
+K_not length = 0 out of 2
+K_not weight total = 0
+Overall runtime = 2.2059998512268066
+No. iterations = 2
+
+Start of 340
+
+Instance ./Instances/testInstance_340.jl
+α = 0.5
+delta2 = 2
+Interdiction = [4, 36, 38]
+MP_obj = 78.2331771850586
+K_not length = 6 out of 44
+K_not weight total = 0.36328125
+Overall runtime = 10.924000024795532
+No. iterations = 16
+
+Start of 341
+
+Instance ./Instances/testInstance_341.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3, 4, 51]
+MP_obj = 139.67835235595703
+K_not length = 29 out of 625
+K_not weight total = 0.1103515625
+Overall runtime = 14.875
+No. iterations = 19
+
+Start of 342
+
+Instance ./Instances/testInstance_342.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 26, 27]
+MP_obj = 134.62157249450684
+K_not length = 3638 out of 137209
+K_not weight total = 0.102691650390625
+Overall runtime = 627.3200001716614
+No. iterations = 19
+
+Start of 343
+
+Instance ./Instances/testInstance_343.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 12, 45]
+MP_obj = 74.0
+K_not length = 0 out of 2
+K_not weight total = 0
+Overall runtime = 4.4100000858306885
+No. iterations = 5
+
+Start of 344
+
+Instance ./Instances/testInstance_344.jl
+α = 0.5
+delta2 = 2
+Interdiction = [21, 48, 55]
+MP_obj = 215.43897247314453
+K_not length = 0 out of 18560
+K_not weight total = 0
+Overall runtime = 126.51299977302551
+No. iterations = 22
+
+Start of 345
+
+Instance ./Instances/testInstance_345.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 5, 48]
+MP_obj = 105.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 2.8490002155303955
+No. iterations = 3
+
+Start of 346
+
+Instance ./Instances/testInstance_346.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3, 25, 58]
+MP_obj = 117.45247235381976
+K_not length = 160 out of 946
+K_not weight total = 0.3812580108642578
+Overall runtime = 20.542999982833862
+No. iterations = 24
+
+Start of 347
+
+Instance ./Instances/testInstance_347.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 15, 41]
+MP_obj = 149.49949645996094
+K_not length = 6 out of 12
+K_not weight total = 0.4921875
+Overall runtime = 9.300000190734863
+No. iterations = 13
+
+Start of 348
+
+Instance ./Instances/testInstance_348.jl
+α = 0.5
+delta2 = 2
+Interdiction = [5, 39, 44]
+MP_obj = 95.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.5880000591278076
+No. iterations = 1
+
+Start of 349
+
+Instance ./Instances/testInstance_349.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 17, 18]
+MP_obj = 63.721697613596916
+K_not length = 13 out of 260
+K_not weight total = 0.3863525390625
+Overall runtime = 15.257999897003174
+No. iterations = 22
+
+Start of 350
+
+Instance ./Instances/testInstance_350.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 2, 27]
+MP_obj = 141.91461390256882
+K_not length = 0 out of 245
+K_not weight total = 0
+Overall runtime = 15.210000038146973
+No. iterations = 22
+
+Start of 351
+
+Instance ./Instances/testInstance_351.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 32, 41]
+MP_obj = 133.39108034968376
+K_not length = 90 out of 17593
+K_not weight total = 0.343505859375
+Overall runtime = 173.57099986076355
+No. iterations = 32
+
+Start of 352
+
+Instance ./Instances/testInstance_352.jl
+α = 0.5
+delta2 = 2
+Interdiction = [4]
+MP_obj = 48.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.6470000743865967
+No. iterations = 1
+
+Start of 353
+
+Instance ./Instances/testInstance_353.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 10]
+MP_obj = 38.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.7009999752044678
+No. iterations = 1
+
+Start of 354
+
+Instance ./Instances/testInstance_354.jl
+α = 0.5
+delta2 = 2
+Interdiction = [24, 43, 61]
+MP_obj = 197.7373046875
+K_not length = 2 out of 6
+K_not weight total = 0.3125
+Overall runtime = 6.58899998664856
+No. iterations = 9
+
+Start of 355
+
+Instance ./Instances/testInstance_355.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 34]
+MP_obj = 89.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.5950000286102295
+No. iterations = 1
+
+Start of 356
+
+Instance ./Instances/testInstance_356.jl
+α = 0.5
+delta2 = 2
+Interdiction = [45, 54, 61]
+MP_obj = 101.68208731710911
+K_not length = 1 out of 495
+K_not weight total = 0.125
+Overall runtime = 18.975000143051147
+No. iterations = 25
+
+Start of 357
+
+Instance ./Instances/testInstance_357.jl
+α = 0.5
+delta2 = 2
+Interdiction = [6, 26, 27]
+MP_obj = 95.5
+K_not length = 0 out of 4
+K_not weight total = 0
+Overall runtime = 2.930000066757202
+No. iterations = 3
+
+Start of 358
+
+Instance ./Instances/testInstance_358.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 13]
+MP_obj = 70.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.5380001068115234
+No. iterations = 1
+
+Start of 359
+
+Instance ./Instances/testInstance_359.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 15, 52]
+MP_obj = 92.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.6319999694824219
+No. iterations = 1
+
+Start of 360
+
+Instance ./Instances/testInstance_360.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2]
+MP_obj = 8.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.616999864578247
+No. iterations = 1
+
+Start of 361
+
+Instance ./Instances/testInstance_361.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 37, 46]
+MP_obj = 154.98046875
+K_not length = 1 out of 8
+K_not weight total = 0.125
+Overall runtime = 4.69599986076355
+No. iterations = 6
+
+Start of 362
+
+Instance ./Instances/testInstance_362.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 6, 67]
+MP_obj = 91.7375688618049
+K_not length = 41 out of 1311
+K_not weight total = 0.4572944641113281
+Overall runtime = 24.612000226974487
+No. iterations = 27
+
+Start of 363
+
+Instance ./Instances/testInstance_363.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 5, 21]
+MP_obj = 60.65497803688049
+K_not length = 57 out of 1035
+K_not weight total = 0.4990234375
+Overall runtime = 21.53700017929077
+No. iterations = 25
+
+Start of 364
+
+Instance ./Instances/testInstance_364.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 23, 59]
+MP_obj = 105.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.4900000095367432
+No. iterations = 1
+
+Start of 365
+
+Instance ./Instances/testInstance_365.jl
+α = 0.5
+delta2 = 2
+Interdiction = [4]
+MP_obj = 46.25
+K_not length = 2 out of 4
+K_not weight total = 0.5
+Overall runtime = 3.005000114440918
+No. iterations = 3
+
+Start of 366
+
+Instance ./Instances/testInstance_366.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 5, 8]
+MP_obj = 21.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 2.2290000915527344
+No. iterations = 2
+
+Start of 367
+
+Instance ./Instances/testInstance_367.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 13, 49]
+MP_obj = 104.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.5820000171661377
+No. iterations = 1
+
+Start of 368
+
+Instance ./Instances/testInstance_368.jl
+α = 0.5
+delta2 = 2
+Interdiction = [4, 12, 34]
+MP_obj = 132.375
+K_not length = 1 out of 3
+K_not weight total = 0.25
+Overall runtime = 3.547999858856201
+No. iterations = 4
+
+Start of 369
+
+Instance ./Instances/testInstance_369.jl
+α = 0.5
+delta2 = 2
+Interdiction = [5, 63]
+MP_obj = 41.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.613999843597412
+No. iterations = 1
+
+Start of 370
+
+Instance ./Instances/testInstance_370.jl
+α = 0.5
+delta2 = 2
+Interdiction = [4, 5, 9]
+MP_obj = 115.5
+K_not length = 0 out of 4
+K_not weight total = 0
+Overall runtime = 4.610999822616577
+No. iterations = 6
+
+Start of 371
+
+Instance ./Instances/testInstance_371.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3, 19, 29]
+MP_obj = 91.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 2.8339998722076416
+No. iterations = 3
+
+Start of 372
+
+Instance ./Instances/testInstance_372.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 13, 60]
+MP_obj = 128.40042877197266
+K_not length = 0 out of 61
+K_not weight total = 0
+Overall runtime = 10.964999914169312
+No. iterations = 16
+
+Start of 373
+
+Instance ./Instances/testInstance_373.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 20, 29]
+MP_obj = 138.75000000002498
+K_not length = 1 out of 3
+K_not weight total = 0.25
+Overall runtime = 2.8430001735687256
+No. iterations = 3
+
+Start of 374
+
+Instance ./Instances/testInstance_374.jl
+α = 0.5
+delta2 = 2
+Interdiction = [5]
+MP_obj = 67.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.6380000114440918
+No. iterations = 1
+
+Start of 375
+
+Instance ./Instances/testInstance_375.jl
+α = 0.5
+delta2 = 2
+Interdiction = [38, 46, 62]
+MP_obj = 164.043701171875
+K_not length = 21 out of 77
+K_not weight total = 0.412109375
+Overall runtime = 11.51799988746643
+No. iterations = 17
+
+Start of 376
+
+Instance ./Instances/testInstance_376.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 2, 61]
+MP_obj = 113.38262939453125
+K_not length = 3 out of 22
+K_not weight total = 0.0546875
+Overall runtime = 9.148000001907349
+No. iterations = 13
+
+Start of 377
+
+Instance ./Instances/testInstance_377.jl
+α = 0.5
+delta2 = 2
+Interdiction = [3, 43]
+MP_obj = 75.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.5930001735687256
+No. iterations = 1
+
+Start of 378
+
+Instance ./Instances/testInstance_378.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 2, 48]
+MP_obj = 113.21359848976135
+K_not length = 18 out of 58
+K_not weight total = 0.42724609375
+Overall runtime = 14.162999868392944
+No. iterations = 20
+
+Start of 379
+
+Instance ./Instances/testInstance_379.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 2, 14]
+MP_obj = 112.98096729348617
+K_not length = 4162 out of 33222
+K_not weight total = 0.13506286591291428
+Overall runtime = 399.37000012397766
+No. iterations = 31
+
+Start of 380
+
+Instance ./Instances/testInstance_380.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 27, 55]
+MP_obj = 82.02594563827734
+K_not length = 20 out of 9335
+K_not weight total = 0.26129150390625
+Overall runtime = 108.74600005149841
+No. iterations = 35
+
+Start of 381
+
+Instance ./Instances/testInstance_381.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 3, 66]
+MP_obj = 84.86996203660965
+K_not length = 0 out of 175
+K_not weight total = 0
+Overall runtime = 14.614000082015991
+No. iterations = 20
+
+Start of 382
+
+Instance ./Instances/testInstance_382.jl
+α = 0.5
+delta2 = 2
+Interdiction = [5, 38, 57]
+MP_obj = 65.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.5929999351501465
+No. iterations = 1
+
+Start of 383
+
+Instance ./Instances/testInstance_383.jl
+α = 0.5
+delta2 = 2
+Interdiction = [11, 18, 57]
+MP_obj = 171.41286951303482
+K_not length = 30 out of 958
+K_not weight total = 0.4661865234375
+Overall runtime = 21.014999866485596
+No. iterations = 25
+
+Start of 384
+
+Instance ./Instances/testInstance_384.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 15, 19]
+MP_obj = 92.64241048693657
+K_not length = 0 out of 16991
+K_not weight total = 0
+Overall runtime = 123.68999981880188
+No. iterations = 25
+
+Start of 385
+
+Instance ./Instances/testInstance_385.jl
+α = 0.5
+delta2 = 2
+Interdiction = [5]
+MP_obj = 28.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.6410000324249268
+No. iterations = 1
+
+Start of 386
+
+Instance ./Instances/testInstance_386.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 43]
+MP_obj = 60.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.6620001792907715
+No. iterations = 1
+
+Start of 387
+
+Instance ./Instances/testInstance_387.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 6, 48]
+MP_obj = 116.52460965514183
+K_not length = 32 out of 2132
+K_not weight total = 0.2330322265625
+Overall runtime = 27.40400004386902
+No. iterations = 26
+
+Start of 388
+
+Instance ./Instances/testInstance_388.jl
+α = 0.5
+delta2 = 2
+Interdiction = [9, 12, 25]
+MP_obj = 79.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 2.7150001525878906
+No. iterations = 3
+
+Start of 389
+
+Instance ./Instances/testInstance_389.jl
+α = 0.5
+delta2 = 2
+Interdiction = [6]
+MP_obj = 60.0
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.6150000095367432
+No. iterations = 1
+
+Start of 390
+
+Instance ./Instances/testInstance_390.jl
+α = 0.5
+delta2 = 2
+Interdiction = [4, 51, 61]
+MP_obj = 73.37434077262878
+K_not length = 26 out of 389
+K_not weight total = 0.36456298828125
+Overall runtime = 16.69700002670288
+No. iterations = 23
+
+Start of 391
+
+Instance ./Instances/testInstance_391.jl
+α = 0.5
+delta2 = 2
+Interdiction = [5, 23, 65]
+MP_obj = 41.58263832330704
+K_not length = 11 out of 199
+K_not weight total = 0.2431640625
+Overall runtime = 14.447999954223633
+No. iterations = 20
+
+Start of 392
+
+Instance ./Instances/testInstance_392.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 20, 34]
+MP_obj = 238.5048828125
+K_not length = 1 out of 6
+K_not weight total = 0.25
+Overall runtime = 5.513000011444092
+No. iterations = 7
+
+Start of 393
+
+Instance ./Instances/testInstance_393.jl
+α = 0.5
+delta2 = 2
+Interdiction = [5]
+MP_obj = 51.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 1.5600001811981201
+No. iterations = 1
+
+Start of 394
+
+Instance ./Instances/testInstance_394.jl
+α = 0.5
+delta2 = 2
+Interdiction = [13, 39, 52]
+MP_obj = 143.06478881835938
+K_not length = 0 out of 54
+K_not weight total = 0
+Overall runtime = 9.437000036239624
+No. iterations = 13
+
+Start of 395
+
+Instance ./Instances/testInstance_395.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 19, 21]
+MP_obj = 116.5
+K_not length = 0 out of 1
+K_not weight total = 0
+Overall runtime = 2.203000068664551
+No. iterations = 2
+
+Start of 396
+
+Instance ./Instances/testInstance_396.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 3, 50]
+MP_obj = 129.40838623046875
+K_not length = 0 out of 83
+K_not weight total = 0
+Overall runtime = 9.430000066757202
+No. iterations = 13
+
+Start of 397
+
+Instance ./Instances/testInstance_397.jl
+α = 0.5
+delta2 = 2
+Interdiction = [1, 19, 28]
+MP_obj = 151.66598510742188
+K_not length = 1 out of 10
+K_not weight total = 0.5
+Overall runtime = 9.687000036239624
+No. iterations = 14
+
+Start of 398
+
+Instance ./Instances/testInstance_398.jl
+α = 0.5
+delta2 = 2
+Interdiction = [2, 12, 41]
+MP_obj = 99.74128723144531
+K_not length = 4 out of 15
+K_not weight total = 0.46875
+Overall runtime = 8.76799988746643
+No. iterations = 12
