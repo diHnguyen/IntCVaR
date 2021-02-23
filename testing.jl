@@ -1,8 +1,8 @@
 
 edge = [1 2; 1 3; 2 3]
-cL_orig =  [5.0, 9.0, 5.0]
-cU_orig =  [5.0, 17.0, 5.0]
-d =  [1.0, 1.0, 1.0]
+cL_orig =  [5.0, 9.0, 4.0]
+cU_orig =  [5.0, 11, 6.0]
+d =  [0.0, 0.0, 0.0]
 Len = length(cL_orig)
 
 c_orig = 0.5*(cL_orig+cU_orig)
