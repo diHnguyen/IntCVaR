@@ -1,4 +1,4 @@
-function gx_bound(c_L, c_U, c, c_g, x_now, edge)
+function gx_bound(c, c_g, edge)
     
     #println(f,"Current CELL's LB = ", c_L)
     #println(f,"Current CELL's UB = ", c_U)
@@ -70,8 +70,6 @@ function gx_bound(c_L, c_U, c, c_g, x_now, edge)
             push!(T, 0)
         end
     end
-
-#     y_index = find(y .== 1)
 
     #println("Minimum Spanning Tree: ", T)
     #println("Shortest path y = ", y)

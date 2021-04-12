@@ -14,7 +14,7 @@ function hx_bound(c_L, c_U, d, x_now)
     end
 
     @objective(h2, Min, sum((c_L[i]+d[i]*x_now[i])*y2[i] + q[i] for i=1:Len))
-    
+#     println(h2)
 #     print(h2)
     set_optimizer(h2, ()-> Gurobi.Optimizer(gurobi_env))
     optimize!(h2)
