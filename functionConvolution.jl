@@ -267,13 +267,14 @@ function FindCVaR(β,α,gL,gU,df_cellPoly, pCell)
     println("W_k = ", W_k)
     V=0
     total_p = 0
+    V_k = zeros(3)
 #     VW_k = zeros(3)
     for k = 1:3 #Replace with the size of K here
         if W_k[k] > 0
             df = df_cellPoly[k,:df]
             numPoly = df_cellPoly[k,:NUMPOLY]
             det_Shift = df_cellPoly[k,:DETSHIFT]
-            V_k = 0
+            V = 0
             for i = 1:numPoly
                 r_l = df[i,:l]
                 r_u = df[i,:u]
@@ -289,18 +290,19 @@ function FindCVaR(β,α,gL,gU,df_cellPoly, pCell)
                     e_poly = integrate(poly*fromroots([-(rightShift+det_Shift)]))
                     v_i = e_poly(u) - e_poly(r_l)
     #                 println("v_i = ", v_i)
-                    V_k = V_k + v_i #*df[i,:w]
+                    V = V + v_i #*df[i,:w]
                 end
         
             end
-            println(k,". V_k = ", V_k, "; W_k = ", W_k[k], "; p_k = ", pCell[k])
+            V_k[k] = V
+            println(k,". V_k = ", V_k[k], "; W_k = ", W_k[k], "; p_k = ", pCell[k])
 #             println()
-            V = V + V_k/W_k[k]*pCell[k]
-            total_p = total_p + pCell[k]
+#             V = V + V_k/W_k[k]*pCell[k]
+#             total_p = total_p + pCell[k]
         end
     end
 #     println("Final V = ", V)
-    println("β-CVaR = ", V/total_p) #/W)
+    println("β-CVaR = ", sum(V_k[k]*pCell[k] for k =1:3)/sum(W_k[k]*pCell[k] for k =1:3)) #/W)
 end
 
 # β = 0.5
