@@ -50,7 +50,7 @@ for k = 1:3 #length(df_cell)
     push!(df_cellPoly, (k,df,numPoly, det_Shift))
 end
 # for k = 1:3
-β = 0.8
+β = 0.7
 α = 20
 gL = 0 #[0,0,0]
 gU = 40 #[20,20,20]
