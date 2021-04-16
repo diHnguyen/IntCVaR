@@ -55,7 +55,7 @@ end
 #MAIN PROGRAM:
 df_constraints = DataFrame(CELL = Int[], Y = Array[], SP = Float64[])
 df_cell = DataFrame(CELL = Int[], Y = Array[], g = Float64[], h = Float64[], LB = Array[], UB = Array[], PROB = Float64[])
-global last_x = zeros(Len)
+
 
 MP_obj = 0.0
 
@@ -80,35 +80,42 @@ constr = Array{JuMP.ConstraintRef}(undef, cRefNum)
 @constraint(m, sum(x[i] for i=1:Len) <= b) #attack budget = 2
 constr[1] = @constraint(m, α <= SP_init + sum(yy[i]*x[i]*d[i] for i=1:Len) + z[1]  )
 @objective(m, Max, α - (1/(1-β))*sum(p[i]*z[i] for i = 1:length(p)) )#w - sum(s[k] for k=1:length(s))/length(s) )
-
-
+global x_sol = []
+global α_sol = 0
+global z_sol = []
+global x_now = []
+global α_now = 0
+global z_now = []
+global last_x = zeros(Len)
 global con_num = 1
 global total_time = 0.0
 global iter = 0
 global K = Int64[1]
 global K_removed = Int64[]
+global LB = 0
+global MP_obj = 1e6
+global min_gLk = 1e6
+global max_gUk = 0
 start = time()
 terminate_cond = false
 
 while terminate_cond == false 
+    global α, β, iter, total_time, K, K_removed, LB, MP_obj, con_num, min_gLk, max_gUk
+    global x_sol, z_sol, α_sol, last_x, x_now,α_now,z_now
     println("lengthK = ", length(K))
-    while length(K) > 0 #original : length(K_partition)
+    while length(K) > length(K_removed) #original : length(K_partition)
         stopping_cond = 0
         
-        global iter = iter + 1
+#         global 
+        iter = iter + 1
         
-        global con_num
-        global total_time
-        global K
-        global K_removed
-        global last_x
-        global x_now
-        if iter > 10
-            println("Break early...")
-            terminate_cond = true
-            K = []
-            break
-        end
+#         global con_num
+#         global total_time
+#         global K
+#         global K_removed
+#         global last_x
+#         global x_now
+        
 #         println(m)
 #         set_optimizer_attribute(m, "OutputFlag", 0)
 #         println(m)
@@ -123,12 +130,13 @@ while terminate_cond == false
         K_newCells = []
         println("\nIter : ", iter)
         
-        if termination_status(m) != MOI.OPTIMAL
+        if termination_status(m) != MOI.OPTIMAL || MP_obj <= LB
             terminate_cond = true
             println("MP not feasible... Terminating")
+
         else
-            MP = JuMP.objective_value.(m)
-            MP_obj = copy(MP)
+            MP_obj = JuMP.objective_value.(m)
+#             MP_obj = copy(MP)
             x_now = JuMP.value.(x) #+ 0.0 
 
             
@@ -206,6 +214,7 @@ while terminate_cond == false
                             println("O2 not satisfied")
                             O2Flag = false
                             y, gL = gx_bound(c_L, c_L+d.*x_now, edge)
+#                             df_cell[k,:gL] = gL
                             if α_now - gL > δ3
                                 println("+ Must partition")
                                 O3Flag = false
@@ -214,6 +223,12 @@ while terminate_cond == false
 
                             gL = sum(c_L[i]*Y_k[i] for i = 1:Len)
                             gU = sum(c_U[i]*Y_k[i] for i = 1:Len)
+                            if gL < min_gLk
+                                min_gLk = gL + 0.0
+                            end
+                            if gU > max_gUk
+                               max_gUk = gU + 0.0
+                            end
                             println("O2 is satisfied: Checking gL , gU")
                             println("gU = ", gU, "; ", "α_now = ", α_now,"; gL = ", gL)
                             if gU - α_now > δ3 && α_now - gL > δ3 
@@ -226,7 +241,7 @@ while terminate_cond == false
                             println("Before calling Partition")
                             newCell = maximum(df_cell[!,:CELL])+1
 
-                            push!(K_newCells, newCell)
+                            
 
 #                             K_partition, Δ, arc_split, yL, yU, gL, gU, SP_L, SP_U, O3Flag = Partition(df_cell, K_partition, newCell, k, p_k, gx, c_L, c_U, M, Y_k, O2Flag)
                             K_removed, Δ, arc_split, yL, yU, gL, gU, SP_L, SP_U, O3Flag = Partition(df_cell, K_removed, newCell, k, p_k, gx, c_L, c_U, M, Y_k, O2Flag)
@@ -302,23 +317,79 @@ while terminate_cond == false
                 p = df_cell[!,:PROB]
                 @objective(m, Max, α - (1/(1-β))*sum(p[i]*z[i] for i = 1:length(p)))
                 println("Update Obj Function")
+                if !(length(p) in K)
+                    push!(K, length(p))
+                end
             end #If O1Flag == true
             
         println("K = ", K)
         println("K_removed = ", K_removed)
-        filter!(x-> !(x in K_removed), K)
-        K_removed = []
-        println("K = ", K)
-        println("K_removed = ", K_removed)
+#         filter!(x-> !(x in K_removed), K)
+#         K_removed = []
+#         println("K = ", K)
+#         println("K_removed = ", K_removed)
         end #If Feasible
 #         println("Set of newly added cells: ", K_newCells)
 #         K_partition = vcat(K_partition, K_newCells)
     end #While K_partition is non-empty
-    
-    if isempty(K) == true
+    println(min_gLk,", ",max_gUk)
+    println("df_cell = ")
+    println(df_cell)
+    if length(K) == length(K_removed)#isempty(K) == true
+        @constraint(m, sum(x_now[i]*x[i] for i=1:Len) <= b-1)
         println("Check beta-CVar")
-        
-        terminating_cond = true
+        df_cellPoly = DataFrame(CELL = Int64[], df = Any[], NUMPOLY = Int64[], DETSHIFT = Float64[])
+        K_removed = [] #copy(K)
+#         break
+        println("K = ", K)
+        for k in K# 1:3 #length(df_cell)
+            cL = df_cell[k,:LB]
+            cU = df_cell[k,:UB]
+            y = df_cell[k,:Y]
+            Len = length(cL)
+            println("\nCell ", k)
+            unc_arcs = findall((y.>0) .& (cL.<cU))
+            det_arcs = findall((y.>0) .& (cL.==cU))
+            println("unc_arcs = ", unc_arcs)
+            println("det_arcs = ", det_arcs)
+            
+            if isempty(det_arcs) == false
+                det_Shift = sum(cL[i] for i in det_arcs)
+            else
+                det_Shift = 0
+            end
+        #     det_arcs = findall((Y.>0) .& (cL.==cU))
+        #     filter!(x-> !(x in unc_arcs), det_arcs)
+        #     det_Shift = 0
+            if length(unc_arcs) > 0
+                
+                df, numPoly = Convolve(cL, cU, Len, unc_arcs)
+
+            #     df[:,:leftShift] = df[:,:leftShift] .+ det_Shift
+                df.w = zeros(numPoly)
+                println(df)
+                push!(df_cellPoly, (k,df,numPoly, det_Shift))
+            else
+                push!(df_cellPoly, (k,DataFrame(),-1, det_Shift))
+            end
+        end
+        println(df_cell[:,:PROB])
+        println(df_cellPoly)
+#         break
+        temp_CVaR = FindCVaR(β,α_now,min_gLk,max_gUk,df_cellPoly, df_cell[:,:PROB])
+        if LB < temp_CVaR 
+            LB = temp_CVaR    
+            x_sol = x_now
+            α_sol = α_now
+            z_sol = z_now
+        end
+    end
+    if iter > 6
+        println("Break early...")
+        terminate_cond = true
+#             K = []
+
+        K_removed = copy(K)
         break
     end
     elapsed = time() - start
@@ -336,7 +407,7 @@ end
 println("Terminating... ")
 total_time = time() - start
 
-@timeit to "CALC OPT GAP" opt_gap = sum(p[i]*(z[i] - h[i]) for i = 1:length(p))
+# @timeit to "CALC OPT GAP" opt_gap = sum(p[i]*(z[i] - h[i]) for i = 1:length(p))
 ##println(f,"\n\n\nFinal z = ", getvalue(z[1:length(p)]))
 # println(f,"Final g = ", g)
 # println(f,"Final h = ",h)
@@ -345,15 +416,10 @@ total_time = time() - start
 println("\n\nInstance ", myFile)
 println("1-β = ", 1-β)
 println("delta2 = ", delta2)
-println("Interdiction = ", findall(last_x.==1))
-println("MP_obj = ", MP_obj)
-println("K_not length = ", length(K_not), " out of ", length(p))
-if isempty(K_not)
-    println("K_not weight total = ", 0)
-else
-    println("K_not weight total = ", sum(p[k] for k in K_not))
-end
+println("Interdiction = ", findall(x_sol.==1))
+println("LB = ", LB, "; UB = ", MP_obj)
+println("α_sol = ",α_sol)
 println("Overall runtime = ", total_time)
 println("No. iterations = ", iter) #length(df[:CELL]))
 
-println(elapsed)
+# println(elapsed)

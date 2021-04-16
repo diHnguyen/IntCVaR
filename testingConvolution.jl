@@ -1,5 +1,6 @@
 using JuMP 
 using DataFrames
+# using Polynomials
 
 include("functionConvolution.jl")
 
@@ -24,7 +25,7 @@ s = sum(df_cell[k,:PROB] for k = 1:3)
 df_cell[:,:PROB] = df_cell[:,:PROB]./s
 println(df_cell)
 # global det_Shift = 0
-for k = 1:3 #length(df_cell)
+for k = 1:1 #3 #length(df_cell)
     cL = df_cell[k,:LB]
     cU = df_cell[k,:UB]
     y = df_cell[k,:Y]
@@ -48,7 +49,9 @@ for k = 1:3 #length(df_cell)
     df.w = zeros(numPoly)
     println(df)
     push!(df_cellPoly, (k,df,numPoly, det_Shift))
+#     push!(df_cellPoly, (k,DataFrame(),numPoly, det_Shift))
 end
+break
 # for k = 1:3
 β = 0.7
 α = 20
