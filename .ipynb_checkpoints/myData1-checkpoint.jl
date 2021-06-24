@@ -30,7 +30,7 @@ M_orig = cU_orig - cL_orig
 last_node = maximum(edge)
 all_nodes = collect(1:last_node)
 
-delta1 = 1e-6
+delta1 = 1e-3
 delta2 = 1.0
 
 β = 0.8

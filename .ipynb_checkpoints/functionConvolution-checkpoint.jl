@@ -1,6 +1,5 @@
-using DataFrames
-using Polynomials
-using JuMP
+# using DataFrames
+# using JuMP
 # using TimerOutputs
 # using Plots
 
@@ -39,7 +38,7 @@ function timeShift(poly, direction, r) #Used in Convolution
     return my_poly
 end
 
-function Convolve(cL, cU, Len, unc_arcs)
+function Convolve(cL, cU, unc_arcs)
 #     cL = [0,0,0].+1
 #     cU = [3,1,2].+1
 #     println("cL = ", cL)
@@ -163,134 +162,39 @@ function Convolve(cL, cU, Len, unc_arcs)
     return df, numPoly
 end
 
-function FindCVaR(β,α,gL,gU,df_cellPoly, pCell)
-    tol = 1e-3
-    W = -1
-    V = 0
-    α_L = gL
-    α_U = gU
-    #The original
-    VaR = α
-#     println("1-β = ", 1-β)
-#     println("1-β - W = ", 1-β-W)
-    iter = 1
-    lastVaR = -0.5
-    W_k = zeros(3)
-    while abs(1-β - W) > tol
-        println("\nVaR Guess = ", VaR)
-        println("W current = ", W)
-        W = 0
-        for k in K
-            df = df_cellPoly[k,:df]
-            numPoly = df_cellPoly[k,:NUMPOLY]
-            det_Shift = df_cellPoly[k,:DETSHIFT]
-            W_k[k] = 0
-            if numPoly == -1
-                if det_Shift <= VaR
-                    W[k] = 1
-                end
-            else
-#                 W_k[k] = 0
-                for i = 1:numPoly
-                    r_l = df[i,:l]
-                    r_u = df[i,:u]
-                    rightShift = df[i,:leftShift]
-                    poly = df[i,:Poly]
-                    p_poly = integrate(poly)
-                    w_i = 0
-                    if r_l + rightShift + det_Shift <= VaR  #df[i,:leftShift]
-                        if (lastVaR < r_u + rightShift + det_Shift) || (VaR < r_u + rightShift+ det_Shift)
-                            println("VaR - rightShift - det_Shift = ", VaR-rightShift- det_Shift)
-                            poly = df[i,:Poly]
-                            p_poly = integrate(poly)  
-                            u = min(VaR-rightShift-det_Shift, r_u) 
-                            w_i = p_poly(u) - p_poly(r_l)
-                            df[i,:w] = w_i
-                        else
-                            w_i = df[i,:w]
-                        end
-                    end
-                    W_k[k] = W_k[k] + w_i 
-                end
-            end
-            W = W + W_k[k]*pCell[k]
+
+function convolveEachCell()
+    global df_cell, Len
+    df_cellPoly = DataFrame(CELL = Int64[], df = Any[], NUMPOLY = Int64[], DETSHIFT = Float64[])
+#     println(df_cell)
+    for k = 1:nrow(df_cell)
+        cL = df_cell[k,:LB]
+        cU = df_cell[k,:UB]
+        y = df_cell[k,:Y]
+#         println("\nCell ", k)
+        unc_arcs = findall((y.>0) .& (cL.<cU))
+        det_arcs = findall((y.>0) .& (cL.==cU))
+#         println("unc_arcs = ", unc_arcs)
+#         println("det_arcs = ", det_arcs)
+        if isempty(det_arcs) == false
+            det_Shift = sum(cL[i] for i in det_arcs)
+        else
+            det_Shift = 0
         end
-        println("W = ", W)
-        lastVaR = VaR
-        if VaR > α_L && W <= 1-β
-            α_L = VaR
+        df = DataFrame(PolyNum = String[], Poly = Polynomial{Float64}[], l = Float64[], u = Float64[], leftShift = Float64[])
+        if isempty(unc_arcs) == true
+            push!(df, ("1", Polynomial([1]), 0, 0, det_Shift) ) #Changes made here
+            numPoly = 0 #Changes made here
+        else
+            df, numPoly = Convolve(cL, cU, unc_arcs)
         end
-        if VaR < α_U && W >= 1-β
-            α_U = VaR
+        if numPoly == 0
+            df.w = zeros(1) #Changes made here
+        else
+            df.w = zeros(numPoly)
         end
-        if abs(1-β - W) > tol
-           
-            VaR = (α_U + α_L)/2
-        end
-#         println("1-β - W = ", 1-β-W)
-#         iter = iter +1
-#         if iter > 5
-#             break
-#         end
+#         println(df)
+        push!(df_cellPoly, (k,df,numPoly, det_Shift))
     end
-    println("Final β-VaR = ", VaR)
-    println("1-β = ", 1-β)
-    println("Final W = ", W)
-    println("W_k = ", W_k)
-    V=0
-    total_p = 0
-    V_k = zeros(3)
-    for k in K #Replace with the size of K here
-        if W_k[k] > 0
-            df = df_cellPoly[k,:df]
-            numPoly = df_cellPoly[k,:NUMPOLY]
-            det_Shift = df_cellPoly[k,:DETSHIFT]
-            V = 0
-            for i = 1:numPoly
-                r_l = df[i,:l]
-                r_u = df[i,:u]
-                rightShift = df[i,:leftShift]
-                poly = df[i,:Poly]
-                if r_l + rightShift + det_Shift <= VaR 
-                    println("Assessing V, poly ", i)
-                    u = min(VaR-rightShift-det_Shift, r_u) 
-                    println(poly)
-                    println(fromroots([-(rightShift+det_Shift)]))
-                    e_poly = integrate(poly*fromroots([-(rightShift+det_Shift)]))
-                    v_i = e_poly(u) - e_poly(r_l)
-                    V = V + v_i 
-                end
-        
-            end
-            V_k[k] = V
-            println(k,". V_k = ", V_k[k], "; W_k = ", W_k[k], "; p_k = ", pCell[k])
-        end
-    end
-    bCVaR = sum(V_k[k]*pCell[k] for k in K)/sum(W_k[k]*pCell[k] for k in K)
-    println("β-CVaR = ", bCVaR) 
-    return bCVaR
+    return df_cellPoly
 end
-
-# β = 0.5
-# α = 1
-# gL = 0
-# gU = 6
-# FindCVaR(1-β,α,gL,gU)
-
-
-#Verify with Monte Carlo 
-# R = 1000000
-# for rep = 1:5
-#     count = 0
-#     avg = 0
-#     for i = 1:R
-#         a = rand()*4
-#         b = rand()*2
-
-#         if a + b <= 3
-#             count = count + 1
-#             avg = avg + a+b
-#         end
-#     end
-#     println("Monte Carlo: ", avg/count) 
-# end

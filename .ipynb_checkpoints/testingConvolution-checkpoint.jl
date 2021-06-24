@@ -21,11 +21,11 @@ df_cellPoly = DataFrame(CELL = Int64[], df = Any[], NUMPOLY = Int64[], DETSHIFT 
 #     push!(df_cell, (k,Y,0,0,cL,cU,p))
     
 # end
-s = sum(df_cell[k,:PROB] for k = 1:3)
-df_cell[:,:PROB] = df_cell[:,:PROB]./s
+# s = sum(df_cell[k,:PROB] for k = 1:3)
+# df_cell[:,:PROB] = df_cell[:,:PROB]./s
 println(df_cell)
 # global det_Shift = 0
-for k = 1:1 #3 #length(df_cell)
+for k = 1:nrow(df_cell)
     cL = df_cell[k,:LB]
     cU = df_cell[k,:UB]
     y = df_cell[k,:Y]
@@ -51,12 +51,13 @@ for k = 1:1 #3 #length(df_cell)
     push!(df_cellPoly, (k,df,numPoly, det_Shift))
 #     push!(df_cellPoly, (k,DataFrame(),numPoly, det_Shift))
 end
-break
+# break
 # for k = 1:3
-β = 0.7
-α = 20
-gL = 0 #[0,0,0]
-gU = 40 #[20,20,20]
-println(df_cell[:,:PROB])
-FindCVaR(β,α,gL,gU,df_cellPoly, df_cell[:,:PROB])
+# β = 0.7
+# α = 20
+# gL = 0 #[0,0,0]
+# gU = 40 #[20,20,20]
+# println(df_cell[:,:PROB])
+
+#FindCVaR(β,α,gL,gU,df_cellPoly, df_cell[:,:PROB])
 # println(df_cellPoly)
