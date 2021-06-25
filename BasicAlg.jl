@@ -16,7 +16,7 @@ global β = 0.01
 
 to = TimerOutput()
 # myFile = "./myData1.jl"
-myFile = "./Instances_Paper1/Center Instances/20NodesCenter_2.jl"
+myFile = "./Instances_Paper1/Center Instances/20NodesCenter_10.jl"
 include(myFile)
 include("PartitionRules.jl")
 include("functionGbound.jl")
@@ -373,9 +373,9 @@ while terminate_cond == false #&& iter < 11#&& isempty(K_bar) == false
         println("α_sol = ", α_sol)
 #         println("z_sol = ", z_sol)
     end
-    if iter == 10
-        break
-    end
+#     if iter == 10
+#         break
+#     end
     elapsed = time() - start
      
 #     end
