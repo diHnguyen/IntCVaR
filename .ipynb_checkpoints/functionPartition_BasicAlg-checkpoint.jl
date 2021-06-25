@@ -7,7 +7,7 @@ function Partition(x_now, newCell, k, p, c_L, c_U, M, y, yL)
     M_path = broadcast(abs,y-yL).*M 
 #     println("y = ", findall(y.==1))
 #     println("yL = ", findall(yL.==1))
-#     println("M = ", M)
+    
     #Return arcs indices using Lemma 1
     S_k = findall((M_path.==maximum(M_path)) .& (M_path.>0))
     arc_split = 0
@@ -20,6 +20,7 @@ function Partition(x_now, newCell, k, p, c_L, c_U, M, y, yL)
         
         #Applying Lemma 2
         yW, gW, SPW = gx_bound(cW, c_g_W, edge)
+#         println("yW = ", findall(yW.>0))
         M_path = broadcast(abs,y-yW).*M
         S_k_W = findall((M_path.==maximum(M_path)) .& (M_path.>0))
 #         println("S_k_W = ", S_k_W)
@@ -39,13 +40,16 @@ function Partition(x_now, newCell, k, p, c_L, c_U, M, y, yL)
     cU_avg = (c_L+M_+c_U)/2
     yL, gL, SP_L = gx_bound(cL_avg, cL_avg+d.*x_now, edge)
     yU, gU, SP_U = gx_bound(cU_avg, cU_avg+d.*x_now, edge)
-
+#     println(gL, "yL = ", findall(yL.>0))
+#     println(gU, "yU = ", findall(yU.>0))
+#     println()
 #         println("g revised k = ", gL)
 #         println("g  = ", gU)
 #     println(df_cell)
     push!(df_cell, (newCell, yU, yU, gU, 0, 0, c_L+M_, c_U, p/2))
 #     println("Here")
     df_cell[k,:UB] = c_U-M_
+    df_cell[k,:Y] = yL
     df_cell[k,:g] = gL
     df_cell[k,:h] = 0
     df_cell[k,:PROB] = p/2

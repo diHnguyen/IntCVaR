@@ -11,7 +11,7 @@ using Polynomials
 myRun = Dates.format(now(), "HH:MM:SS")
 global gurobi_env = Gurobi.Env()
 global edge, cL_orig, cU_orig, Len, c_orig, yy, SP_init, p,g,h, origin, destination, last_node, all_nodes, M_orig, delta1, delta2, b, last_node 
-global β = 0.8
+global β = 0.01
 # gurobi_env.setParam("LogToConsole", 0)
 
 to = TimerOutput()
@@ -64,8 +64,8 @@ push!(df_cell, (1, yy,yy, SP_init, 0, 0, cL_orig, cU_orig, 1))
 push!(df_constraints, (1, 1,yy,SP_init))
 ##println(f,"MASTER PROBLEM==========================================================================================")
 
-zNum = 100
-cRefNum = 200
+zNum = 5
+cRefNum = 20
 m = Model(() -> Gurobi.Optimizer(gurobi_env)) # If we want to add # in Gurobi, then we have to turn of 
 # set_optimizer_attribute(m, "OutputFlag", 0)    #Gurobi's own Cuts 
 # println("1")
@@ -101,26 +101,35 @@ global K_removed = []
 start = time()
 global terminate_cond = false
 
-while terminate_cond == false #&& iter < 10#&& isempty(K_bar) == false
+while terminate_cond == false #&& iter < 5#&& isempty(K_bar) == false
     global α, β, iter, total_time, K_bar, K_newly_added, K_removed, LB, MP_obj, con_num, newCell #, min_gLk, max_gUk
     global x_sol, z_sol, α_sol, last_x, x_now,α_now,z_now, terminate_cond
 #     println("lengthK = ", length(K))
     while isempty(K_bar) == false #length(K_bar) > K
 #         stopping_cond = 0
         iter = iter + 1
+        
         optimize!(m) 
         println("\nIter : ", iter," ; LB = ", LB)
+#         println(m)
 #         println("", df_cell)
 #         K = vcat(K, K_newly_added)
         
         if termination_status(m) == MOI.OPTIMAL
             MP_obj = JuMP.objective_value.(m)
             x_now = JuMP.value.(x)
-            println("Obj = ", MP_obj)
-            println("Interdiction ", findall(x_now.==1))
             α_now = JuMP.value.(α)
 #             last_x = x_now
             z_now = JuMP.value.(z)
+            println("Obj = ", MP_obj, "\tα_now = ", α_now)
+            println("z_now = ", z_now[1:nrow(df_cell)])
+            println("Interdiction ", findall(x_now.==1))
+            for i in eachrow(df_cell)
+               println("Cell ", i.CELL, " : ", i.g, "\t", findall(i.Y .>0)) 
+            end
+            if iter == 5
+               println(m) 
+            end
         end
         
         if termination_status(m) != MOI.OPTIMAL || MP_obj <= LB
@@ -201,7 +210,7 @@ while terminate_cond == false #&& iter < 10#&& isempty(K_bar) == false
                         p_k = df_cell[k,:PROB]
                         df_cell[k,:h] = hx
                         gx = df_cell[k,:g] 
-#                         println("gx = ", gx, "; hx = ", hx)
+                        println("Cell ", k, ": gx = ", gx, "; hx = ", hx, " Y = ", findall(df_cell[k,:Y].>0))
                         
                         #Verify against OC3
                         if gx - hx <= delta2
@@ -268,7 +277,7 @@ while terminate_cond == false #&& iter < 10#&& isempty(K_bar) == false
                             if add_yL == true #yL is a new path not in P^k
                                 con_num = con_num + 1
                                 constr[con_num] = @constraint(m, α <= 
-                                            sum(d[i]*x[i]*yL[i] for i = 1:Len) + SP_L + z[newCell])
+                                            sum(d[i]*x[i]*yL[i] for i = 1:Len) + SP_L + z[k])
 #                                 println("New path for cell k ", constr[con_num])
                                 push!(df_constraints, (con_num,k, yL, SP_L))
                             end
@@ -297,6 +306,10 @@ while terminate_cond == false #&& iter < 10#&& isempty(K_bar) == false
     if terminate_cond == false
         #Convolution
         println("Begin Convolution")
+#         println(df_cell)
+        for i in eachrow(df_cell)
+           println("Cell ", i.CELL, " : ", findall(i.Y .> 0)) 
+        end
         df_cellPoly = convolveEachCell()
 #         println(df_cellPoly)
         #FindCVaR
@@ -322,7 +335,7 @@ while terminate_cond == false #&& iter < 10#&& isempty(K_bar) == false
 #         println("z_sol = ", z_sol)
     end
     elapsed = time() - start
-    
+     
 #     end
 #     time_lapse = toq()    
 #     total_time = total_time + time_lapse
@@ -332,7 +345,19 @@ while terminate_cond == false #&& iter < 10#&& isempty(K_bar) == false
 #             break
 #         end
 end
+# println(df_cell)
+# outfile = "C:/Users/din/Documents/GitHub/IntCVaR/df_cell.csv"
+# f = open(outfile,"w") 
+# println(f, df_cell)
+# close(f)
 
+# for i in eachrow(df_cell)
+#     Y = findall(i.Y .>0)
+#     D = d.*x_sol
+#     println(i.LB[Y] + D[Y])
+#     println(i.UB[Y] + D[Y])
+# end
+# CSV.write("df_cell.csv",Matrix(df_cell))
 println("Terminating... ")
 total_time = time() - start
 
