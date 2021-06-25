@@ -164,12 +164,12 @@ end
 
 
 function convolveEachCell()
-    global df_cell, Len
+    global df_cell, Len, d, x_now
     df_cellPoly = DataFrame(CELL = Int64[], df = Any[], NUMPOLY = Int64[], DETSHIFT = Float64[])
 #     println(df_cell)
     for k = 1:nrow(df_cell)
-        cL = df_cell[k,:LB]
-        cU = df_cell[k,:UB]
+        cL = df_cell[k,:LB]+d.*x_now
+        cU = df_cell[k,:UB]+d.*x_now
         y = df_cell[k,:Y]
 #         println("\nCell ", k)
         unc_arcs = findall((y.>0) .& (cL.<cU))
@@ -181,6 +181,7 @@ function convolveEachCell()
         else
             det_Shift = 0
         end
+#         println("Cell ", k, " : g = ", df_cell[k,:g, ",", path, "; cL = ", L[path],", cU = ", U[path], "; gU = ", sum(U[path]), "; p = ",i.PROB)
         df = DataFrame(PolyNum = String[], Poly = Polynomial{Float64}[], l = Float64[], u = Float64[], leftShift = Float64[])
         if isempty(unc_arcs) == true
             push!(df, ("1", Polynomial([1]), 0, 0, det_Shift) ) #Changes made here

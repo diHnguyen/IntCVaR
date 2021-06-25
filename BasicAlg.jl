@@ -16,7 +16,7 @@ global β = 0.01
 
 to = TimerOutput()
 # myFile = "./myData1.jl"
-myFile = "./Instances_Paper1/Center Instances/20NodesCenter_1.jl"
+myFile = "./Instances_Paper1/Center Instances/20NodesCenter_2.jl"
 include(myFile)
 include("PartitionRules.jl")
 include("functionGbound.jl")
@@ -64,8 +64,8 @@ push!(df_cell, (1, yy,yy, SP_init, 0, 0, cL_orig, cU_orig, 1))
 push!(df_constraints, (1, 1,yy,SP_init))
 ##println(f,"MASTER PROBLEM==========================================================================================")
 
-zNum = 5
-cRefNum = 20
+zNum = 1000
+cRefNum = 200000
 m = Model(() -> Gurobi.Optimizer(gurobi_env)) # If we want to add # in Gurobi, then we have to turn of 
 # set_optimizer_attribute(m, "OutputFlag", 0)    #Gurobi's own Cuts 
 # println("1")
@@ -101,7 +101,7 @@ global K_removed = []
 start = time()
 global terminate_cond = false
 
-while terminate_cond == false #&& iter < 5#&& isempty(K_bar) == false
+while terminate_cond == false #&& iter < 11#&& isempty(K_bar) == false
     global α, β, iter, total_time, K_bar, K_newly_added, K_removed, LB, MP_obj, con_num, newCell #, min_gLk, max_gUk
     global x_sol, z_sol, α_sol, last_x, x_now,α_now,z_now, terminate_cond
 #     println("lengthK = ", length(K))
@@ -121,15 +121,22 @@ while terminate_cond == false #&& iter < 5#&& isempty(K_bar) == false
             α_now = JuMP.value.(α)
 #             last_x = x_now
             z_now = JuMP.value.(z)
-            println("Obj = ", MP_obj, "\tα_now = ", α_now)
-            println("z_now = ", z_now[1:nrow(df_cell)])
-            println("Interdiction ", findall(x_now.==1))
-            for i in eachrow(df_cell)
-               println("Cell ", i.CELL, " : ", i.g, "\t", findall(i.Y .>0)) 
-            end
-            if iter == 5
-               println(m) 
-            end
+#             println("Obj = ", MP_obj, "\tα_now = ", α_now)
+#             println("z_now = ", z_now[1:nrow(df_cell)])
+#             println("Interdiction ", findall(x_now.==1))
+#             
+            
+#             if iter == 3 || iter == 4
+#                 for i in eachrow(df_cell)
+#                     println("Cell ", i.CELL, " : g = ", i.g, ",", findall(i.Y .>0), " ; gL = ", i.gL, ",", findall(i.Y_Lk .>0)) 
+#                     tempdf = df_constraints |> 
+#                             @filter(_.CELL == i.CELL)|> DataFrame
+#                     RefNum = tempdf.NUM
+#                     for con in RefNum
+#                         println(constr[con])
+#                     end
+#                 end
+#             end
         end
         
         if termination_status(m) != MOI.OPTIMAL || MP_obj <= LB
@@ -158,7 +165,7 @@ while terminate_cond == false #&& iter < 5#&& isempty(K_bar) == false
                     df_cell[k,:g] = gx
                     df_cell[k,:Y] = y
 #                     println("y = ", y)
-                    println("Cell ",k,": ", findall(y.>0), " = ", gx)
+#                     println("Cell ",k,": ", findall(y.>0), " = ", gx)
 #                     println("Shortest Path = ", findall(y.>0))
                     if  α_now - (z_now[k] + gx) > epsilon
                         
@@ -181,6 +188,7 @@ while terminate_cond == false #&& iter < 5#&& isempty(K_bar) == false
 #                 partitionk = false
                 
                 #Verify against OC2
+#                 println("K_bar = ", K_bar)
                 for k in K_bar
 #                     println("O2, ", k)
 #                     row = findall(df_cell[!,:CELL] .== k)[1]
@@ -210,7 +218,7 @@ while terminate_cond == false #&& iter < 5#&& isempty(K_bar) == false
                         p_k = df_cell[k,:PROB]
                         df_cell[k,:h] = hx
                         gx = df_cell[k,:g] 
-                        println("Cell ", k, ": gx = ", gx, "; hx = ", hx, " Y = ", findall(df_cell[k,:Y].>0))
+#                         println("Cell ", k, ": gx = ", gx, "; hx = ", hx, " Y = ", findall(df_cell[k,:Y].>0))
                         
                         #Verify against OC3
                         if gx - hx <= delta2
@@ -234,7 +242,7 @@ while terminate_cond == false #&& iter < 5#&& isempty(K_bar) == false
                             df_temp_k = df_constraints |> 
                             @filter(_.CELL == k)|> DataFrame
 #                             @filter(_.Y[arc_split] == 1) |> DataFrame
-                            
+#                             println("", df_temp_k)
                             add_yL = true #Turns false if path yL is in cell k's existing constraints
                             add_yU = true #Turns false if path yU is in cell k's existing constraints
                             existingPath = false
@@ -243,9 +251,14 @@ while terminate_cond == false #&& iter < 5#&& isempty(K_bar) == false
                             #Update RHS of affected constraints in k
                             #Copy each constraint in k to |K|+1
 #                             println("Update constraints")
+#                             println("\nCell ", k)
+#                             println("", df_temp_k)
+#                             println("arc_split = ", arc_split, "; Δ = ",Δ)
                             for dfRow in eachrow(df_temp_k) #constr_of_k 
 #                                 Y_k = df_constraints[!,:Y][i] #Get path y in that constraint
                                 Y_k = dfRow.Y
+#                                 println("Inside for-loop Δ = ",Δ)
+#                                 println("Path ", findall(Y_k.>0))
 #                                 newCell_RHS = df_constraints[!,:SP][i] #RHS for newCell if arc_split is not in Y_k
                                 if Y_k == yL #Found yL in the current P-set
                                     add_yL = false
@@ -255,38 +268,53 @@ while terminate_cond == false #&& iter < 5#&& isempty(K_bar) == false
                                 end
                                 
                                 newCell_RHS = dfRow.SP
+#                                 println("RHS = ", newCell_RHS)
+                                
                                 #ONLY UPDATE RHS IF ARC SPLIT IS ON THAT PATH  
                                 if Y_k[arc_split] == 1
 #                                 if Y_k[arc_split] == 1 #in findall(Y_k.==1)
 #                                     k_new_RHS = df_constraints[!,:SP][i] - Δ #gap #FIND NEW RHS OF CELL k
+                                    conRef = dfRow.NUM
                                     newCell_RHS = newCell_RHS + Δ #gap #FIND NEW RHS OF NEWCELL
                                     dfRow.SP = dfRow.SP - Δ
-                                    conRef = dfRow.NUM
+                                    
+                                    df_constraints[conRef,:SP] = dfRow.SP
+                                    
+#                                     println("New RHS for Cell ",k,", C",conRef,":", dfRow.SP)
 #                                     df_constraints[!,:SP][i] = k_new_RHS #FIX DF INFORMATION OF CELL k
                                     set_normalized_rhs(constr[conRef], dfRow.SP)
+#                                     println("C", conRef,". ", constr[conRef])
 #                                     set_normalized_rhs(constr[i], k_new_RHS) #FIX CONSTRAINT RHS OF CELL k
                                 end
                                 
                                 #COPY PATH Y_k FROM k to NEWCELL = |K|+1
+#                                 println("RHS for Cell ",newCell,":", newCell_RHS)
                                 con_num = con_num + 1 
                                 constr[con_num] = @constraint(m, α <= 
                                             sum(d[i]*x[i]*Y_k[i] for i = 1:Len) + newCell_RHS + z[newCell])
+#                                 println("C", con_num,". ", constr[con_num])
                                 push!(df_constraints, (con_num,newCell, Y_k, newCell_RHS)) #ADD DF INFORMATION OF CELL |K|+1
                             end
-
+                            
+#                             println("", df_temp_k)
+                            
                             if add_yL == true #yL is a new path not in P^k
+                                
                                 con_num = con_num + 1
                                 constr[con_num] = @constraint(m, α <= 
                                             sum(d[i]*x[i]*yL[i] for i = 1:Len) + SP_L + z[k])
-#                                 println("New path for cell k ", constr[con_num])
+#                                 println("New path for cell ", k , ": ", constr[con_num])
                                 push!(df_constraints, (con_num,k, yL, SP_L))
+#                                 println("C", con_num,". ", constr[con_num])
                             end
                             if add_yU == true #yU is a new path not in P^{|K|+1}
                                 con_num = con_num + 1
                                 constr[con_num] = @constraint(m, α <= 
                                             sum(d[i]*x[i]*yU[i] for i = 1:Len) + SP_U + z[newCell])
+#                                 println("New path for cell ", newCell , ": ", constr[con_num])
 #                                 println("New path for cell |K|+1 ", constr[con_num])
                                 push!(df_constraints, (con_num, newCell, yU, SP_U))
+#                                 println("C", con_num,". ", constr[con_num])
                             end
                         end
                     end
@@ -305,11 +333,22 @@ while terminate_cond == false #&& iter < 5#&& isempty(K_bar) == false
    
     if terminate_cond == false
         #Convolution
+        println("Obj = ", MP_obj, "\tα_now = ", α_now)
+#             println("z_now = ", z_now[1:nrow(df_cell)])
+        println("Interdiction ", findall(x_now.==1))
+        for i in eachrow(df_cell)
+            path = findall(i.Y .>0)
+            L = i.LB+d.*x_now
+            U = i.UB+d.*x_now
+#             costU = U + d.*x_now
+#             println("Cell ", i.CELL, " : g = ", i.g, ",", path, "; cL = ", L[path],", cU = ", U[path], "; gU = ", sum(U[path]), "; p = ",i.PROB) #, " ; gL = ", i.gL, ",", findall(i.Y_Lk .>0), "; p = ",i.PROB,
+#                 " vs ", sum(((i.LB+i.UB)/2+d.*x_now).*i.Y), " and ", sum(((i.LB)+d.*x_now).*i.Y_Lk))
+        end
         println("Begin Convolution")
 #         println(df_cell)
-        for i in eachrow(df_cell)
-           println("Cell ", i.CELL, " : ", findall(i.Y .> 0)) 
-        end
+#         for i in eachrow(df_cell)
+#            println("Cell ", i.CELL, " : ", findall(i.Y .> 0)) 
+#         end
         df_cellPoly = convolveEachCell()
 #         println(df_cellPoly)
         #FindCVaR
@@ -333,6 +372,9 @@ while terminate_cond == false #&& iter < 5#&& isempty(K_bar) == false
         println("x = ", findall(x_sol.==1))
         println("α_sol = ", α_sol)
 #         println("z_sol = ", z_sol)
+    end
+    if iter == 10
+        break
     end
     elapsed = time() - start
      
