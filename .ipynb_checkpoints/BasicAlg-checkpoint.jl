@@ -11,12 +11,12 @@ using Polynomials
 myRun = Dates.format(now(), "HH:MM:SS")
 global gurobi_env = Gurobi.Env()
 global edge, cL_orig, cU_orig, Len, c_orig, yy, SP_init, p,g,h, origin, destination, last_node, all_nodes, M_orig, delta1, delta2, b, last_node 
-global β = 0.01
+global β = 0.5
 # gurobi_env.setParam("LogToConsole", 0)
 
 to = TimerOutput()
 # myFile = "./myData1.jl"
-myFile = "./Instances_Paper1/Center Instances/20NodesCenter_10.jl"
+myFile = "./Instances_Paper1/Center Instances/20NodesCenter_3.jl"
 include(myFile)
 include("PartitionRules.jl")
 include("functionGbound.jl")
@@ -27,7 +27,7 @@ include("functionFindCVaR.jl")
 
 println("Running...")
 global epsilon = 1e-4
-global delta3 = 1.0
+# global delta3 = 1.0
 setparams!(gurobi_env, Heuristics=0.0, Cuts = 0, OutputFlag = 0)
 
 # If we want to add # in Gurobi, then we have to turn of Gurobi's own Cuts 
@@ -110,7 +110,7 @@ while terminate_cond == false #&& iter < 11#&& isempty(K_bar) == false
         iter = iter + 1
         
         optimize!(m) 
-        println("\nIter : ", iter," ; LB = ", LB)
+#         println("\nIter : ", iter," ; LB = ", LB)
 #         println(m)
 #         println("", df_cell)
 #         K = vcat(K, K_newly_added)
@@ -209,7 +209,8 @@ while terminate_cond == false #&& iter < 11#&& isempty(K_bar) == false
 #                     println("z_now[k]", z_now[k])
 #                     println("gL = ", gL)
                     #Verify against OC2
-                    if α_now - z_now[k] - gL <= delta2 #&& df_cell[k,:PROB] < β
+                    if α_now <= gL 
+#                     if α_now - z_now[k] - gL <= delta2 #&& df_cell[k,:PROB] < β
 #                         setdiff!(K_bar,k)
                         push!(K_removed,k)
                     else
@@ -333,9 +334,9 @@ while terminate_cond == false #&& iter < 11#&& isempty(K_bar) == false
    
     if terminate_cond == false
         #Convolution
-        println("Obj = ", MP_obj, "\tα_now = ", α_now)
+#         println("Obj = ", MP_obj, "\tα_now = ", α_now)
 #             println("z_now = ", z_now[1:nrow(df_cell)])
-        println("Interdiction ", findall(x_now.==1))
+#         println("Interdiction ", findall(x_now.==1))
         for i in eachrow(df_cell)
             path = findall(i.Y .>0)
             L = i.LB+d.*x_now
@@ -344,7 +345,7 @@ while terminate_cond == false #&& iter < 11#&& isempty(K_bar) == false
 #             println("Cell ", i.CELL, " : g = ", i.g, ",", path, "; cL = ", L[path],", cU = ", U[path], "; gU = ", sum(U[path]), "; p = ",i.PROB) #, " ; gL = ", i.gL, ",", findall(i.Y_Lk .>0), "; p = ",i.PROB,
 #                 " vs ", sum(((i.LB+i.UB)/2+d.*x_now).*i.Y), " and ", sum(((i.LB)+d.*x_now).*i.Y_Lk))
         end
-        println("Begin Convolution")
+#         println("Begin Convolution")
 #         println(df_cell)
 #         for i in eachrow(df_cell)
 #            println("Cell ", i.CELL, " : ", findall(i.Y .> 0)) 
@@ -354,11 +355,11 @@ while terminate_cond == false #&& iter < 11#&& isempty(K_bar) == false
         #FindCVaR
         nu_L = minimum(df_cell.gL)
         yU, nu_U, SPU = gx_bound(cU_orig, cU_orig + d.*x_now, edge)
-        println("Begin FindCVaR")
+#         println("Begin FindCVaR")
         CVaR = FindCVaR(α_now, nu_L, nu_U, df_cellPoly)
         K_bar = collect(1:nrow(df_cell))
         t_con = @constraint(m, sum(x_now[i]*x[i] for i = 1:Len) <= b-1)
-        println("ADD X-CONSTRAINT TO MP: ", t_con, "\n")
+#         println("ADD X-CONSTRAINT TO MP: ", t_con, "\n")
         if LB < CVaR
 #             LB = copy(CVaR)
             LB = CVaR
@@ -368,9 +369,9 @@ while terminate_cond == false #&& iter < 11#&& isempty(K_bar) == false
 #             z_sol = copy(z_now)
             
         end
-        println("wth Incumbent solution:")
-        println("x = ", findall(x_sol.==1))
-        println("α_sol = ", α_sol)
+#         println("wth Incumbent solution:")
+#         println("x = ", findall(x_sol.==1))
+#         println("α_sol = ", α_sol)
 #         println("z_sol = ", z_sol)
     end
 #     if iter == 10
@@ -386,6 +387,9 @@ while terminate_cond == false #&& iter < 11#&& isempty(K_bar) == false
 # #             println("total time" > 3600")
 #             break
 #         end
+#     if findall(x_now.==1) == [3,7]
+#         println("Iter ", iter)
+#     end
 end
 # println(df_cell)
 # outfile = "C:/Users/din/Documents/GitHub/IntCVaR/df_cell.csv"

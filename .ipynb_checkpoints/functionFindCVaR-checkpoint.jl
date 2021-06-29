@@ -154,9 +154,9 @@ function FindCVaR(α_now, α_L, α_U, df_cellPoly)
 #             break
 #         end
     end
-    println("Final β-VaR = ", VaR, " in [",α_L,",",α_U,"]")
+#     println("Final β-VaR = ", VaR, " in [",α_L,",",α_U,"]")
 #     println("1-β = ", 1-β)
-    println("Final W = ", W)
+#     println("Final W = ", W)
 #     println("W_k = ", W_k)
     V=0
     total_p = 0
@@ -198,6 +198,6 @@ function FindCVaR(α_now, α_L, α_U, df_cellPoly)
         end
     end
     bCVaR = sum(V_k[k]*pCell[k] for k in K)/sum(W_k[k]*pCell[k] for k in K)
-    println("β-CVaR = ", bCVaR) 
+#     println("β-CVaR = ", bCVaR,"; W = ", W) 
     return bCVaR
 end
