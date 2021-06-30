@@ -1,20 +1,20 @@
-# using JuMP
-# function Partition(df_cell, K_removed, newCell, k, p, gx, cL, cU, M, y, O2Flag)
-function Partition(x_now, newCell, k, p, c_L, c_U, M, y, yL)
+# function Partition(x_now, newCell, k, p, c_L, c_U, M, y, yL)
+function Partition(x_now, newCell, k, p, c_L, c_U, M, y)
     global K_bar, K_newly_added, d, df_cell
     
+#     c_g = (c_L+c_U) + d.*x_now
     #Find set of M^k_{ij} s.t. (i,j) is in either paths but not both
-    M_path = broadcast(abs,y-yL).*M 
-#     println("y = ", findall(y.==1))
-#     println("yL = ", findall(yL.==1))
+#     M_path = broadcast(abs,y-yL).*M 
+#     println("y = ", findall(y.==1), ": ", sum(c_g.*y))
+#     println("yL = ", findall(yL.==1), ": ", sum(c_L.*yL))
     
     #Return arcs indices using Lemma 1
-    S_k = findall((M_path.==maximum(M_path)) .& (M_path.>0))
-    arc_split = 0
+#     S_k = findall((M_path.==maximum(M_path)) .& (M_path.>0))
+#     arc_split = 0
 #     println("S_k = ", S_k)
-    if isempty(S_k) == false
-        arc_split = S_k[1]
-    else
+#     if isempty(S_k) == false
+#         arc_split = S_k[1]
+#     else
         cW = c_L + M.*y
         c_g_W = cW + d.*x_now
         
@@ -25,8 +25,10 @@ function Partition(x_now, newCell, k, p, c_L, c_U, M, y, yL)
         S_k_W = findall((M_path.==maximum(M_path)) .& (M_path.>0))
 #         println("S_k_W = ", S_k_W)
         arc_split = S_k_W[1]
-    end
+#     end
+    
 #     println("arc_split = ", arc_split)
+#     println("M[arc_split] = ", M[arc_split])
     M_ = zeros(Len)
     M_[arc_split] = M[arc_split]/2
     Δ = M[arc_split]/4

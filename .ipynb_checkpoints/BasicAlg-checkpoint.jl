@@ -11,12 +11,12 @@ using Polynomials
 myRun = Dates.format(now(), "HH:MM:SS")
 global gurobi_env = Gurobi.Env()
 global edge, cL_orig, cU_orig, Len, c_orig, yy, SP_init, p,g,h, origin, destination, last_node, all_nodes, M_orig, delta1, delta2, b, last_node 
-global β = 0.5
+global β = 0.089
 # gurobi_env.setParam("LogToConsole", 0)
 
 to = TimerOutput()
 # myFile = "./myData1.jl"
-myFile = "./Instances_Paper1/Center Instances/20NodesCenter_3.jl"
+myFile = "./Instances_Paper1/Center Instances/20NodesCenter_10.jl"
 include(myFile)
 include("PartitionRules.jl")
 include("functionGbound.jl")
@@ -64,7 +64,7 @@ push!(df_cell, (1, yy,yy, SP_init, 0, 0, cL_orig, cU_orig, 1))
 push!(df_constraints, (1, 1,yy,SP_init))
 ##println(f,"MASTER PROBLEM==========================================================================================")
 
-zNum = 1000
+zNum = 10000
 cRefNum = 200000
 m = Model(() -> Gurobi.Optimizer(gurobi_env)) # If we want to add # in Gurobi, then we have to turn of 
 # set_optimizer_attribute(m, "OutputFlag", 0)    #Gurobi's own Cuts 
@@ -101,7 +101,7 @@ global K_removed = []
 start = time()
 global terminate_cond = false
 
-while terminate_cond == false #&& iter < 11#&& isempty(K_bar) == false
+while terminate_cond == false && iter < 20#&& isempty(K_bar) == false
     global α, β, iter, total_time, K_bar, K_newly_added, K_removed, LB, MP_obj, con_num, newCell #, min_gLk, max_gUk
     global x_sol, z_sol, α_sol, last_x, x_now,α_now,z_now, terminate_cond
 #     println("lengthK = ", length(K))
@@ -110,7 +110,7 @@ while terminate_cond == false #&& iter < 11#&& isempty(K_bar) == false
         iter = iter + 1
         
         optimize!(m) 
-#         println("\nIter : ", iter," ; LB = ", LB)
+        println("\nIter : ", iter," ; LB = ", LB)
 #         println(m)
 #         println("", df_cell)
 #         K = vcat(K, K_newly_added)
@@ -121,9 +121,9 @@ while terminate_cond == false #&& iter < 11#&& isempty(K_bar) == false
             α_now = JuMP.value.(α)
 #             last_x = x_now
             z_now = JuMP.value.(z)
-#             println("Obj = ", MP_obj, "\tα_now = ", α_now)
+            println("Obj = ", MP_obj, "\tα_now = ", α_now)
 #             println("z_now = ", z_now[1:nrow(df_cell)])
-#             println("Interdiction ", findall(x_now.==1))
+            println("Interdiction ", findall(x_now.==1), "|K| = ", nrow(df_cell))
 #             
             
 #             if iter == 3 || iter == 4
@@ -232,7 +232,8 @@ while terminate_cond == false #&& iter < 11#&& isempty(K_bar) == false
 #                             newCell = maximum(df_cell[!,:CELL])+1
 #                             K_partition, Δ, arc_split, yL, yU, gL, gU, SP_L, SP_U, O3Flag = Partition(df_cell, K_partition, newCell, k, p_k, gx, c_L, c_U, M, Y_k, O2Flag)
                             
-                            Δ, arc_split, yL, yU, gL, gU, SP_L, SP_U = Partition(x_now, newCell, k, p_k, c_L, c_U, M, df_cell[k,:Y],yL)
+#                             Δ, arc_split, yL, yU, gL, gU, SP_L, SP_U = Partition(x_now, newCell, k, p_k, c_L, c_U, M, df_cell[k,:Y],yL)
+                            Δ, arc_split, yL, yU, gL, gU, SP_L, SP_U = Partition(x_now, newCell, k, p_k, c_L, c_U, M, df_cell[k,:Y])
 
                             #Updating constraints in MP:
 #                             constr_of_k = findall(df_constraints[!,:CELL].== k) #Current constraints of k
