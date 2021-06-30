@@ -72,7 +72,7 @@ function FindCVaR(α_now, α_L, α_U, df_cellPoly)
 #     println("1-β = ", 1-β)
 #     println("1-β - W = ", 1-β-W)
     iter = 1
-    lastVaR = -0.5
+#     lastVaR = -0.5
     W_k = zeros(cellNum)
 #     while abs(1-β - W) > tol
 #     println("[α_L, α_U] = ", α_L," , ", α_U)
@@ -131,22 +131,23 @@ function FindCVaR(α_now, α_L, α_U, df_cellPoly)
             W = W + W_k[k]*pCell[k]
 
         end
+        
 #         println("\nVaR Guess = ", VaR, " in [",α_L,",",α_U,"]")
 #         println("W current = ", W)
 #         println("W = ", W)
-        lastVaR = VaR
+#         lastVaR = VaR
 #         println("Update bounds on nu")
 #         println("VaR = ", VaR)
 #         println("Current: [",α_L,",",α_U,"]")
-        if VaR > α_L && W <= 1-β
+        if W <= 1-β #VaR > α_L && 
             α_L = VaR
         end
-        if VaR < α_U && W >= 1-β
+        if W >= 1-β #VaR < α_U && 
             α_U = VaR
         end
-        if α_U - α_L > eVaR #abs(1-β - W) > eVaR
-            VaR = (α_U + α_L)/2
-        end
+#         if α_U - α_L > eVaR #abs(1-β - W) > eVaR
+        VaR = (α_U + α_L)/2
+#         end
 #         println("Updated: [",α_L,",",α_U,"]")
 #         println("1-β - W = ", 1-β-W)
 #         iter = iter +1
@@ -154,7 +155,10 @@ function FindCVaR(α_now, α_L, α_U, df_cellPoly)
 #             break
 #         end
     end
-#     println("Final β-VaR = ", VaR, " in [",α_L,",",α_U,"]")
+    if W == 0
+        VaR = α_L
+    end
+    println("Final β-VaR = ", VaR, " in [",α_L,",",α_U,"]")
 #     println("1-β = ", 1-β)
 #     println("Final W = ", W)
 #     println("W_k = ", W_k)
