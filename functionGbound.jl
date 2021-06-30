@@ -30,7 +30,7 @@ function gx_bound(c, c_g, edge)
     end
 
 
-    graph = Graph(no_node)
+    graph = SimpleDiGraph(no_node)
     distmx = Inf*ones(no_node, no_node)
 
     # Adding links to the graph
