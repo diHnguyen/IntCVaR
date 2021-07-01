@@ -77,6 +77,7 @@ function FindCVaR(α_now, α_L, α_U, df_cellPoly)
 #     while abs(1-β - W) > tol
 #     println("[α_L, α_U] = ", α_L," , ", α_U)
     while α_U - α_L > eVaR
+        println("Range in [",α_L,",",α_U,"]")
         eVaR = 0.1 #Changes made here
         W = 0
         for k in K
@@ -155,8 +156,62 @@ function FindCVaR(α_now, α_L, α_U, df_cellPoly)
 #             break
 #         end
     end
+    # HERE LASTTTTTTTT: ADDED THE FOR LOOP OVER K:
     if W == 0
-        VaR = α_L
+        VaR = α_U
+#         W = 0
+        for k in K
+            df = df_cellPoly[k,:df]
+            numPoly = df_cellPoly[k,:NUMPOLY]
+            det_Shift = df_cellPoly[k,:DETSHIFT]
+            W_k[k] = 0
+#             if k == 4
+#                println("", df) 
+#                 println("det_Shift = ", det_Shift)
+#             end
+#             println("Cell ",k)
+            if numPoly == 0 #Changes made here
+                if det_Shift <= VaR
+                    W_k[k] = 1 #Changes made here
+                end
+            else
+#                 W_k[k] = 0
+                for i = 1:numPoly
+                    r_l = df[i,:l]
+                    r_u = df[i,:u]
+                    rightShift = df[i,:leftShift]
+                    poly = df[i,:Poly]
+                    p_poly = integrate(poly)
+                    w_i = 0
+                    
+                    if r_l + rightShift + det_Shift <= VaR  #df[i,:leftShift]
+                        if (lastVaR < r_u + rightShift + det_Shift) || (VaR < r_u + rightShift+ det_Shift)
+#                             println("VaR - rightShift - det_Shift = ", VaR-rightShift- det_Shift)
+                            poly = df[i,:Poly]
+                            p_poly = integrate(poly)  
+                            
+                            #One of these two is correct:
+                            #1
+                            u = min(VaR-rightShift-det_Shift, r_u) 
+                            #2
+#                             u = min(VaR-rightShift-det_Shift, r_u) 
+                            
+                            w_i = p_poly(u) - p_poly(r_l)
+                            df[i,:w] = w_i
+                           
+                        else
+                            w_i = df[i,:w]
+                        end
+                    end
+                    W_k[k] = W_k[k] + w_i 
+#                     println("Integrate (", poly, ") from ", r_l," to ", r_u, " yields ", W_k[k])
+                end
+                
+            end
+#             println("Cell ", k,": W_k = ", W_k[k])
+            W = W + W_k[k]*pCell[k]
+
+        end
     end
     println("Final β-VaR = ", VaR, " in [",α_L,",",α_U,"]")
 #     println("1-β = ", 1-β)
