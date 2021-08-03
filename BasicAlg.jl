@@ -11,24 +11,21 @@ using Polynomials
 myRun = Dates.format(now(), "HH:MM:SS")
 global gurobi_env = Gurobi.Env()
 global edge, cL_orig, cU_orig, Len, c_orig, yy, SP_init, p,g,h, origin, destination, last_node, all_nodes, M_orig, delta1, delta2, b, last_node 
-global β # = rand(1:999)/1000
+global β = 0.089
 # gurobi_env.setParam("LogToConsole", 0)
 
 to = TimerOutput()
-
-dataSet = "N25Ins_"
-Ins = string(ARGS[1])
-myFile = "/Users/din/Desktop/IntCVaR/Instances/New Instances/N25_keep/"*dataSet*Ins*"_keep.jl"
+# myFile = "./myData1.jl"
+myFile = "./Instances_Paper1/Center Instances/20NodesCenter_10.jl"
 include(myFile)
-#include("PartitionRules.jl")
+include("PartitionRules.jl")
 include("functionGbound.jl")
 include("functionHbound.jl")
 include("functionPartition_BasicAlg.jl")
 include("functionConvolution.jl")
 include("functionFindCVaR.jl")
 
-
-println("Ins ", dataSet, Ins, ": ", β, " Running...", myRun)
+println("Running...")
 global epsilon = 1e-4
 # global delta3 = 1.0
 setparams!(gurobi_env, Heuristics=0.0, Cuts = 0, OutputFlag = 0)
@@ -67,8 +64,8 @@ push!(df_cell, (1, yy,yy, SP_init, 0, 0, cL_orig, cU_orig, 1))
 push!(df_constraints, (1, 1,yy,SP_init))
 ##println(f,"MASTER PROBLEM==========================================================================================")
 
-zNum = 100000
-cRefNum = 2000000
+zNum = 10000
+cRefNum = 200000
 m = Model(() -> Gurobi.Optimizer(gurobi_env)) # If we want to add # in Gurobi, then we have to turn of 
 # set_optimizer_attribute(m, "OutputFlag", 0)    #Gurobi's own Cuts 
 # println("1")
@@ -104,7 +101,7 @@ global K_removed = []
 start = time()
 global terminate_cond = false
 
-while terminate_cond == false 
+while terminate_cond == false && iter < 20#&& isempty(K_bar) == false
     global α, β, iter, total_time, K_bar, K_newly_added, K_removed, LB, MP_obj, con_num, newCell #, min_gLk, max_gUk
     global x_sol, z_sol, α_sol, last_x, x_now,α_now,z_now, terminate_cond
 #     println("lengthK = ", length(K))
@@ -113,7 +110,7 @@ while terminate_cond == false
         iter = iter + 1
         
         optimize!(m) 
-#        println("\nIter : ", iter," ; LB = ", LB)
+        println("\nIter : ", iter," ; LB = ", LB)
 #         println(m)
 #         println("", df_cell)
 #         K = vcat(K, K_newly_added)
@@ -122,10 +119,11 @@ while terminate_cond == false
             MP_obj = JuMP.objective_value.(m)
             x_now = JuMP.value.(x)
             α_now = JuMP.value.(α)
+#             last_x = x_now
             z_now = JuMP.value.(z)
-#            println("Obj = ", MP_obj, "\tα_now = ", α_now)
+            println("Obj = ", MP_obj, "\tα_now = ", α_now)
 #             println("z_now = ", z_now[1:nrow(df_cell)])
-#            println("Interdiction ", findall(x_now.==1), "|K| = ", nrow(df_cell))
+            println("Interdiction ", findall(x_now.==1), "|K| = ", nrow(df_cell))
 #             
             
 #             if iter == 3 || iter == 4
@@ -144,11 +142,11 @@ while terminate_cond == false
         if termination_status(m) != MOI.OPTIMAL || MP_obj <= LB
             terminate_cond = true
             K_bar = []
-            #if termination_status(m) != MOI.OPTIMAL
-            #    println("MP not feasible...")
-            #else
-            #    println("MP_Obj did not improve..." )
-            #end
+            if termination_status(m) != MOI.OPTIMAL
+                println("MP not feasible...")
+            else
+                println("MP_Obj did not improve..." )
+            end
         else
             O1Flag = true
             if last_x != x_now
@@ -380,7 +378,7 @@ while terminate_cond == false
 #     if iter == 10
 #         break
 #     end
-#    elapsed = time() - start
+    elapsed = time() - start
      
 #     end
 #     time_lapse = toq()    
@@ -407,7 +405,7 @@ end
 #     println(i.UB[Y] + D[Y])
 # end
 # CSV.write("df_cell.csv",Matrix(df_cell))
-#println("Terminating... ")
+println("Terminating... ")
 total_time = time() - start
 
 # @timeit to "CALC OPT GAP" opt_gap = sum(p[i]*(z[i] - h[i]) for i = 1:length(p))
@@ -416,16 +414,13 @@ total_time = time() - start
 # println(f,"Final h = ",h)
 ##println(f,"List of all cells = ", Cell_List)
 
-#println("\n\nInstance ", myFile)
-#println("1-β = ", 1-β)
-#println("delta2 = ", delta2)
-#println("Interdiction = ", findall(x_sol.==1))
-#println("LB = ", LB, "; UB = ", MP_obj)
-#println("α_sol = ",α_sol)
-#println("Overall runtime = ", total_time)
-#println("No. iterations = ", iter) #length(df[:CELL]))
+println("\n\nInstance ", myFile)
+println("1-β = ", 1-β)
+println("delta2 = ", delta2)
+println("Interdiction = ", findall(x_sol.==1))
+println("LB = ", LB, "; UB = ", MP_obj)
+println("α_sol = ",α_sol)
+println("Overall runtime = ", total_time)
+println("No. iterations = ", iter) #length(df[:CELL]))
 
-timesFile = open("/Users/din/Desktop/IntCVaR/OutputFile/"*dataSet*".txt", "a")
-println(timesFile, dataSet, "; Ins ", Ins, "; β ",β,"; Time ", total_time, "; LB ", LB, "; α_sol ",α_sol,"; x_sol ", findall(x_sol.==1),"; Cells ", nrow(df_cell), "; Iter ", iter)
-close(timesFile)
-println("\007")
+# println(elapsed)
