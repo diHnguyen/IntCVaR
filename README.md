@@ -1,4 +1,4 @@
-# Asymmetric Stochastic Shortest-Path Interdiction under Conditional Value-at-Risk - #IntAsymCostUnc
+# Asymmetric Stochastic Shortest-Path Interdiction under Conditional Value-at-Risk - #IntCVaR
 # Di H. Nguyen and J. Cole Smith
 
 Link to paper: TBD
