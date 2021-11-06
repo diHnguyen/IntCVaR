@@ -7,7 +7,7 @@ Abstract: We study a two-stage shortest-path interdiction problem between an int
 
 In this repository you will find the following:
 
-Code:
+Code (please excuse the terrible text in math mode - I'll see if there's a solution to this)
 - The code for Algorithm 1 (solving for $x^*$)
 - The codes for solving for $\bar{x}$ and $x^L$ and using them as solutions to the SSIC
 
